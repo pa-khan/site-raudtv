@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="template/styles/css/style.css" />
+	<link rel="stylesheet" href="template/styles/css/responsive.css" />
+	<script src="template/scripts/libs.js"></script>
+	<script src="template/scripts/common.js"></script>
+	<!--[if lt IE 9]>
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('main');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+	</script>
+	<![endif]-->
+</head>
+<body>
+	<div class="panel">
+		<div class="case">
+			<div class="row">
+				<div class="col col-c-5 hidden show-c">
+					<div class="mobile-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<div class="col col-a-13 col-b-14 hidden-c">
+					<div class="panel__nav">
+						<ul>
+							<li class="panel__item-drop">
+								<a href="">О компании</a>
+								<ul>
+									<li><a href="">Профиль</a></li>
+									<li><a href="">История</a></li>
+									<li><a href="">Контакты</a></li>
+									<li><a href="">Вакансии</a></li>
+								</ul>
+							</li>
+							<li class="panel__item-drop">
+								<a href="">Покупателям</a>
+								<ul>
+									<li><a href="">Пункт</a></li>
+									<li><a href="">Пункт</a></li>
+									<li><a href="">Пункт</a></li>
+								</ul>
+							</li>
+							<li><a href="">HoReCa</a></li>
+							<li><a href="">Доставка и оплата</a></li>
+							<li><a href="">Новости</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col col-a-11 col-b-9 col-c-7">
+					<div class="panel__contacts">
+						<ul>
+							<li><a href="tel:+74232060160"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" class="icon icon-phone"><title>phone</title><path d="M3.3,3.82c.78-.78,1.46-1.26.08-3S1.08.44.32,1.2s0,4.11,3.16,7.32,6.45,4,7.32,3.16,2.07-1.67.36-3.05-2.2-.7-3,.08c-.54.54-1.92-.59-3.11-1.78S2.76,4.36,3.3,3.82Z" transform="translate(0 0)" style="fill:#fdc203"/></svg><span>+7 423 206 01 60</span></a></li>
+							<li><a href="tel:+79089940440"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15.06" class="icon icon-whatsapp"><title>whatsapp</title><path d="M15,7.31A7.38,7.38,0,0,1,4.08,13.7L0,15l1.33-3.92A7.23,7.23,0,0,1,.27,7.31,7.36,7.36,0,1,1,15,7.31M7.64,1.16A6.17,6.17,0,0,0,1.45,7.31h0a6.08,6.08,0,0,0,1.18,3.6l-.77,2.28,2.38-.76a6.2,6.2,0,0,0,9.6-5.13,6.17,6.17,0,0,0-6.2-6.14h0M11.35,9c0-.07-.17-.12-.35-.21S9.94,8.26,9.78,8.2s-.29-.09-.41.09-.47.58-.57.7-.21.13-.39,0A4.94,4.94,0,0,1,7,8.15,5.4,5.4,0,0,1,6,6.91c-.11-.18,0-.28.08-.37l.27-.31a1.2,1.2,0,0,0,.18-.3.33.33,0,0,0,0-.31c0-.09-.41-1-.56-1.33A.42.42,0,0,0,5.5,4H5.16a.67.67,0,0,0-.48.22A2,2,0,0,0,4,5.69a3.47,3.47,0,0,0,.74,1.85,7.38,7.38,0,0,0,3.08,2.7c1.84.72,1.84.48,2.17.45a1.83,1.83,0,0,0,1.22-.85A1.49,1.49,0,0,0,11.35,9" transform="translate(0 0.06)" style="fill:#fcc103"/></svg><span>+7 908 994 04 40</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col col-c-12 hidden show-c">
+					<div class="panel__auth">
+						<ul>
+							<li><a data-fancybox data-src="#popup-auth" href="javascript:;">Вход</a></li>
+							<li><a href="">Регистрация</a></li>
+						</ul>
+					</div>
+					<!-- <div class="panel__auth">
+						<ul>
+							<li><a href="">Личный кабинет</a></li>
+							<li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 12" class="icon icon-exit"><title>exit</title><path d="M9,6q0,2.31,0,4.61A1.33,1.33,0,0,1,7.6,12H1.41A1.33,1.33,0,0,1,0,10.61Q0,6,0,1.38A1.32,1.32,0,0,1,1.09,0a3.12,3.12,0,0,1,.6,0H7.53A1.41,1.41,0,0,1,8.74.54,1.26,1.26,0,0,1,9,1.33Q9,3.67,9,6ZM1.28,10.79h6.1a.35.35,0,0,0,.39-.39q0-4.38,0-8.76c0-.33-.12-.45-.46-.45H4.91v.23q0,2.94,0,5.87a.6.6,0,0,1-.21.48L2.92,9.35Zm2.41-6.4L4,4.11S4.07,4,4.08,4c0-.38,0-.76,0-1.18l-.3.26s-.09.09-.09.13C3.68,3.58,3.68,4,3.68,4.39Z" transform="translate(0 0)"/></svg></a></li>
+						</ul>
+					</div> -->
+				</div>
+				<div class="col col-c-24 hidden show-c">
+					<div class="panel__nav panel__nav_mobile">
+						<ul>
+							<li class="panel__item-drop">
+								<a href="">О компании</a>
+								<ul>
+									<li><a href="">Профиль</a></li>
+									<li><a href="">История</a></li>
+									<li><a href="">Контакты</a></li>
+									<li><a href="">Вакансии</a></li>
+								</ul>
+							</li>
+							<li class="panel__item-drop">
+								<a href="">Покупателям</a>
+								<ul>
+									<li><a href="">Пункт</a></li>
+									<li><a href="">Пункт</a></li>
+									<li><a href="">Пункт</a></li>
+								</ul>
+							</li>
+							<li><a href="">HoReCa</a></li>
+							<li><a href="">Доставка и оплата</a></li>
+							<li><a href="">Новости</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<header class="header">
+		<div class="case">
+			<div class="row">
+				<div class="col col-a-4 col-b-5 col-c-14">
+					<div class="header__logo"><a href=""><img src="upload/logo.jpg" alt=""></a></div>
+				</div>
+				<div class="col col-a-11 col-b-10 hidden-c">
+					<div class="header__search search">
+						<div class="search__input input input_default"><input type="text" placeholder="Поиск по 90 000 товаров"><button class="search__btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" class="search__icon icon icon-search"><title>search</title><path d="M14.88,12.6,11.57,9.25a6.12,6.12,0,0,0,.82-3,6.19,6.19,0,1,0-6.19,6.21,6.1,6.1,0,0,0,3.13-.87l3.3,3.34a.41.41,0,0,0,.29.12.4.4,0,0,0,.29-.12l1.69-1.71A.4.4,0,0,0,14.88,12.6ZM6.19,2.42A3.79,3.79,0,1,1,2.41,6.21,3.79,3.79,0,0,1,6.19,2.42Z" style="fill:#353435"/></svg></button></div>
+						<div class="search__example">например: <span>колбаски для жарки</span></div>
+					</div>
+				</div>
+				<div class="col col-a-5 col-b-6 col-c-10">
+					<div class="header__data">
+						<div class="header__total-price">3 550 руб.</div>
+						<div class="header__cart">
+							<div class="header__cart-wrap">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.79 21"  class="header__cart-icon icon icon-cart"><title>cart</title><path d="M0,6.78H7.76a.79.79,0,0,0,.63-.25q3-3.07,6.11-6.12A1.17,1.17,0,0,1,16.3,1.9a3.1,3.1,0,0,1-.22.24C14,4.26,11.83,6.37,9.72,8.5a1.75,1.75,0,0,1-1.44.61H3.52L5.1,18.66H18.62l1.59-9.55H13.12V6.78H23.79V9.1H22.58c-.14.88-1.35,8.13-1.81,10.9a1.16,1.16,0,0,1-1.16,1H4.13a1.21,1.21,0,0,1-.28,0,1.22,1.22,0,0,1-.93-1.14C2.69,18.38,1.29,10,1.14,9.1H0Z" style="fill:#1d1e1c"/></svg>
+								<span class="header__cart-count">5</span>
+							</div>
+							<div class="drop-items">
+								<div class="drop-items__list">
+									<div class="drop-items__item">
+										<div class="drop-items__remove"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon-close"><title>close</title><polygon points="16 1.69 14.31 0 8 6.31 1.69 0 0 1.69 6.31 8 0 14.31 1.69 16 8 9.69 14.31 16 16 14.31 9.69 8 16 1.69" style="fill:#010101"/></svg></div>
+										<div class="drop-items__title"><a href="">Лопатка свиная Мираторг бескостная охлажденная, 850г</a></div>
+										<div class="drop-items__counts"><span class="drop-items__quantity">1 шт.</span>x<span class="drop-items__price"><span>212</span> руб.</span></div>
+									</div>
+									<div class="drop-items__item">
+										<div class="drop-items__remove"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon-close"><title>close</title><polygon points="16 1.69 14.31 0 8 6.31 1.69 0 0 1.69 6.31 8 0 14.31 1.69 16 8 9.69 14.31 16 16 14.31 9.69 8 16 1.69" style="fill:#010101"/></svg></div>
+										<div class="drop-items__title"><a href="">Лопатка свиная Мираторг бескостная охлажденная, 850г</a></div>
+										<div class="drop-items__counts"><span class="drop-items__quantity">1 шт.</span>x<span class="drop-items__price"><span>212</span> руб.</span></div>
+									</div>
+									<div class="drop-items__item">
+										<div class="drop-items__remove"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon-close"><title>close</title><polygon points="16 1.69 14.31 0 8 6.31 1.69 0 0 1.69 6.31 8 0 14.31 1.69 16 8 9.69 14.31 16 16 14.31 9.69 8 16 1.69" style="fill:#010101"/></svg></div>
+										<div class="drop-items__title"><a href="">Лопатка свиная Мираторг бескостная охлажденная, 850г</a></div>
+										<div class="drop-items__counts"><span class="drop-items__quantity">1 шт.</span>x<span class="drop-items__price"><span>212</span> руб.</span></div>
+									</div>
+									<div class="drop-items__item">
+										<div class="drop-items__remove"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon-close"><title>close</title><polygon points="16 1.69 14.31 0 8 6.31 1.69 0 0 1.69 6.31 8 0 14.31 1.69 16 8 9.69 14.31 16 16 14.31 9.69 8 16 1.69" style="fill:#010101"/></svg></div>
+										<div class="drop-items__title"><a href="">Лопатка свиная Мираторг бескостная охлажденная, 850г</a></div>
+										<div class="drop-items__counts"><span class="drop-items__quantity">1 шт.</span>x<span class="drop-items__price"><span>212</span> руб.</span></div>
+									</div>
+									<div class="drop-items__item">
+										<div class="drop-items__remove"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon-close"><title>close</title><polygon points="16 1.69 14.31 0 8 6.31 1.69 0 0 1.69 6.31 8 0 14.31 1.69 16 8 9.69 14.31 16 16 14.31 9.69 8 16 1.69" style="fill:#010101"/></svg></div>
+										<div class="drop-items__title"><a href="">Лопатка свиная Мираторг бескостная охлажденная, 850г</a></div>
+										<div class="drop-items__counts"><span class="drop-items__quantity">1 шт.</span>x<span class="drop-items__price"><span>212</span> руб.</span></div>
+									</div>
+								</div>
+								<div class="drop-items__more"><span>и ещё 2 товара</span></div>
+								<div class="drop-items__foot">
+									<div class="drop-items__btn btn btn_bg-green btn_text-white btn_small btn_bold">оформить заказ</div>
+									<div class="drop-items__desc">Минимальный заказ – 1 000 руб</div>
+								</div>
+							</div>
+						</div>
+						<div class="header__favorit"><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 17.93" class="header__favorit-icon icon icon-love"><title>love</title><path d="M10,2.19A6.23,6.23,0,0,1,12.29.47a5.44,5.44,0,0,1,7.57,3.94,6.75,6.75,0,0,1-.76,4.68,18.08,18.08,0,0,1-3.33,4.25,36.94,36.94,0,0,1-5.6,4.51.23.23,0,0,1-.3,0,34.5,34.5,0,0,1-7-6A12.19,12.19,0,0,1,.44,8a6.05,6.05,0,0,1,.84-6A5,5,0,0,1,4.91,0,5.65,5.65,0,0,1,9.72,1.89l.27.28Zm0,3.36-.12-.21c-.23-.43-.44-.86-.68-1.28A4.21,4.21,0,0,0,5.6,1.72,3.42,3.42,0,0,0,2.66,3,4.37,4.37,0,0,0,2,7.38a10,10,0,0,0,2,3.19,32.2,32.2,0,0,0,5.89,5.26.21.21,0,0,0,.3,0c1.06-.84,2.16-1.66,3.19-2.54a20.51,20.51,0,0,0,3.53-3.8,6.74,6.74,0,0,0,1.38-3.16,4.31,4.31,0,0,0-.84-3.21,3.79,3.79,0,0,0-5.2-.66,4.88,4.88,0,0,0-1.48,1.71Z" transform="translate(0 0)" style="fill:#1d1d1b"/></svg></a></div>
+					</div>
+				</div>
+				<div class="col col-a-4 col-b-3 hidden-c">
+					<div class="header__auth">
+						<ul>
+							<li><a data-fancybox data-src="#popup-auth" href="javascript:;">Вход</a></li>
+							<li><a href="">Регистрация</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col col-a-11 col-b-10 col-c-24 hidden show-c">
+					<div class="header__search search">
+						<div class="search__input input input_default"><input type="text" placeholder="Поиск по 90 000 товаров"><button class="search__btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" class="search__icon icon icon-search"><title>search</title><path d="M14.88,12.6,11.57,9.25a6.12,6.12,0,0,0,.82-3,6.19,6.19,0,1,0-6.19,6.21,6.1,6.1,0,0,0,3.13-.87l3.3,3.34a.41.41,0,0,0,.29.12.4.4,0,0,0,.29-.12l1.69-1.71A.4.4,0,0,0,14.88,12.6ZM6.19,2.42A3.79,3.79,0,1,1,2.41,6.21,3.79,3.79,0,0,1,6.19,2.42Z" style="fill:#353435"/></svg></button></div>
+						<div class="search__example">например: <span>колбаски для жарки</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="nav">
+		<div class="case">
+			<div class="nav__btn">
+				<div class="nav__btn-wrap">
+					<div class="nav__btn-icon">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="nav__btn-text">КАТАЛОГ</div>
+				</div>
+			</div>
+			<div class="nav__wrap">
+				<div class="nav__item">
+					<a href="" class="nav__link">ДЕЛИКАТЕСЫ</a>
+				</div>
+				<div class="nav__item">
+					<a href="" class="nav__link">СОБСТВЕННОЕ ПРОИЗВОДСТВО</a>
+				</div>
+				<div class="nav__item nav__item-drop">
+					<a href="" class="nav__link">СУПЕРМАРКЕТ</a>
+					<div class="nav__sub">
+						<div class="nav__subnav">
+							<ul>
+								<li><a href="">Мясо, охлажденное мясо, птица</a></li>
+								<li><a href="">Гриль меню </a></li>
+								<li><a href="">Рыба, морепродукты</a></li>
+								<li><a href="">Сыры, молочные продуты</a></li>
+								<li><a href="">Овощи, зелень, фрукты, ягоды</a></li>
+								<li><a href="">Овощная и фруктовая консервация</a></li>
+								<li><a href="">Сухие завтраки, каши, снэки</a></li>
+								<li><a href="">Кондитерские изделия</a></li>
+							</ul>
+						</div>
+						<div class="nav__subnav">
+							<ul>
+								<li><a href="">Соусы , специи, приправы</a></li>
+								<li><a href="">Уксусы, растительные масла</a></li>
+								<li><a href="">Соки, воды, напитки</a></li>
+								<li><a href="">Чай, кофе, какао</a></li>
+								<li><a href="">Макаронные изделия, крупа, все для выпечки</a></li>
+								<li><a href="">Подарки</a></li>
+								<li><a href="">Полуфабрикаты и  продукты быстрого приготовления</a></li>
+							</ul>
+						</div>
+						<div class="nav__product">
+							<div class="nav__product-title">ТОВАР НЕДЕЛИ</div>
+							<div class="product">
+								<div class="product__img"><img src="upload/products/4.png" alt=""></div>
+								<div class="product__title"><a href="">Корейская нарезка из говядины в соусе Кальби ...</a></div>
+								<div class="product__price">
+									<div class="product__price-default"><span>1288</span> руб.</div>
+								</div>
+								<div class="product__data">
+									<div class="product__avendor-code">2060030031720</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="nav__item">
+					<a href="" class="nav__link">BEAUTY МАРКЕТ</a>
+				</div>
+				<div class="nav__item">
+					<a href="" class="nav__link">BABY МАРКЕТ</a>
+				</div>
+				<div class="nav__item">
+					<a href="" class="nav__link">HOME МАРКЕТ</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<main class="main">
+		<div class="page">
+			<div class="case">
+				<div class="page404">
+					<div class="page404__head">
+						<div class="row">
+							<div class="col col-a-10">
+								<div class="page404__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 222"><title>emptycart</title><path d="M110,222c-4.13-5.39-2.93-12-3.54-18-2.11-20.6-3.6-41.26-5.32-61.9-.46-5.53-.9-11.07-1.37-16.92-2.3.69-13.5,21.64-18.5,30.2-1.49,2.55-1.45,4.85-.74,7.67,1.86,7.42-2.32,15.32-9,17.77a15.2,15.2,0,0,1-19-8c-3.12-6.6-.64-14.89,5.72-19.1.42-.28.87-.7,1.31-.7,7.1,0,8.87-6,11.63-10.76,5.2-9,10.32-18.1,15.52-27.13,1.17-2,1.95-3.43-1.51-3.92-3.8-.54-4.93-3.77-5-7.17-.12-8.44-.17-16.88,0-25.32.11-5.16,3-7.61,8.52-7.66C100,71,111.12,71,122.27,71l4.68,0c14.81.05,100.1-.06,101.22-.05l16,.06c1.32,0,23.17,0,28.79,0l4,0c5,.05,10,0,15,.18s7.74,2.75,7.84,7.85q.22,12.39,0,24.79c-.1,5.3-1.41,6.55-8,8.47,4.33,7.66,8.59,15.22,12.86,22.77,1.9,3.36,3.93,6.65,5.74,10.06,2,3.72,3.75,6.77,8.8,7.65,13.13,2.29,11.26,13.08,9.88,17.58-.69,2.07-1.06,3.81-2.44,5-5.06,5.86-10.93,7.8-17.53,5.48-6.42-2.25-11.35-8.59-9.68-15.24s-1.07-11-3.92-15.9c-4.76-8.2-9.44-16.45-14.16-24.67-1.24,3.1-1.31,5.88-1.55,8.65-2.28,26.86-4.63,53.71-6.81,80.58A10.37,10.37,0,0,1,269,222Zm201.85-52.57c1.08,1.18,2,1.13,3.42.26,2.31-1.4,3.59-2.57,1.55-5.78C303.19,139,288.5,114.64,274.12,90.12c-1.37-2.54-3.18-3.77-5.35-2-2,1.6-2.33,2,0,6.12,3.59,6.42,7.14,12.87,10.79,19.26q15.71,27.43,31.49,54.81Zm-243.72,0,.9-1.1,42.26-74.07c1.49-2.87,1.84-4.17-.11-5.78-2.19-1.8-4.08-.61-5.26,1.65-3.62,6.2-7.3,12.37-10.85,18.62-10.49,18.48-20.74,35.62-31.2,54.12-2.75,4.25-1.54,4.86.06,6.49A2.69,2.69,0,0,0,68.17,169.42Zm122,48.65c24.16,0,48.32-.14,72.47.11,4.94.05,6.33-1.73,6.47-6.39.2-6.89,1-13.77,1.61-20.65,1.47-17.8,2.91-35.61,4.47-53.4.29-3.25-1-4.57-4-5q-31.14-4-62.27-8.24c-21.08-2.84-42.14-5.81-63.22-8.62-11.85-1.58-23.72-3.08-35.61-4.31-4.1-.43-7.07,3-6.81,7.22s.62,8.4,1,12.6c2.29,26.86,4.71,53.71,6.76,80.59.37,4.9,2.06,6.19,6.71,6.15C141.87,218,166,218.07,190.18,218.07Zm81-110.8c-2.25-4-4.17-7.34-6-10.72-2.66-4.94-1.93-9.19,1.87-11.46,4.16-2.49,8.34-1.08,11.24,3.85,3.15,5.37,6.35,10.71,9.3,16.19,1.33,2.46,3.23,2.68,5.47,2.32,2.59-.43,2.18-2.61,2.19-4.4,0-6.59,0-13.18,0-19.77,0-8.17,0-8.18-7.89-8.18h-195c-.83,0-1.67,0-2.5,0-3.74-.21-5.4,1.3-5.26,5.35.25,7.26,0,14.53.11,21.79,0,2-.9,4.66,2.36,5.25,2.62.47,4.32-.49,5.64-3,2.94-5.49,6.09-10.86,9.27-16.21,2.59-4.35,6.64-5.56,10.62-3.4,3.82,2.08,4.79,6.31,2.52,10.87-1.85,3.72-4.52,7-5.9,11.45Z" transform="translate(0 0)" style="fill:#ababad"/><path d="M10,112.22c.59-.31,1.36-.66,2.09-1.08a20.36,20.36,0,0,0,7.87-7.43c1.37-2.4,2.54-.58,3.27.6a17.67,17.67,0,0,0,7,6.9c2.63,1.31,1.42,2.74-.2,3.55A15.92,15.92,0,0,0,22.79,122c-.52,1-1.55,2.36-2.57.73-2.34-3.75-4.87-7.18-9.09-8.92A1.5,1.5,0,0,1,10,112.22Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M6.58,144.8c2.66,3.15,6.35,5.62,6.55,8.35.15,2.12-4.26,6.58-6.26,6.36-2.64-.29-6.5-3.9-6.86-6.5C-.29,150.76,4.48,148.84,6.58,144.8Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M165,35.43c-.22,2,.29,3.34,2.65,3.11,1.87-.19,3.36.18,3.27,2.58-.05,1.44-.4,2.81-2,3.11-1.93.38-2.61-.92-2.85-2.62a7.13,7.13,0,0,0-.47-1.35c-5.48,3.26-5.37-3.24-7.88-5s-5.92-.13-7.77-2.93q0-.47,0-.94c2.22-2.33,4.13-2.39,6.91-.29,2.37,1.8,5.6,2.49,8.11,4.33Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M256.55,57.61c-2.32,2.83-6.2-.08-9.46,1.78-1.65.94-2.77-.53-2.92-2.29s.59-3.62,2.27-3.09c4.38,1.36,8.71-1.21,13.12.32,1.28.44,3.23-.84,4.2,1.16a2.29,2.29,0,0,1-.16,1.87c-1.21,1.93-2.81,1.08-4.39.52A14,14,0,0,0,256.55,57.61Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M228.16,70.87l-3.34,0c-1.11-5.63.86-11.36-.59-17a2.3,2.3,0,0,1,1.62-2.78,3.27,3.27,0,0,1,2.33.12c1,.54.74,1.64.7,2.68-.16,3.87-.14,7.76-.27,11.63C228.56,67.3,228.32,69.08,228.16,70.87Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M207,2.8c.25-.08.86-.32,1.49-.47,1.91-.48,4-.61,4.23,1.9.17,2.13-1.78,2.65-3.56,2.23-2.71-.64-3.14.92-3.24,3s-.27,4.74-2.87,4.28c-3-.54-1.88-2.77-.74-4.64.28-.45,0-1.26,0-1.9C202.13,2.78,202.13,2.78,207,2.8Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M244.51,29.32c-2.67-.78-3.51-3.14-4.21-5.36-1.58-.12-1.57,1.33-2.44,1.75a3.32,3.32,0,0,1-3.69-.15,2,2,0,0,1-.86-2.16,2.44,2.44,0,0,1,3-1.89c2,.35,3.31.31,2.73-2.3l0,0c6,.65,8.23,4.84,5.48,10.1Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M277,70.92l-4,0c-2-1.86-4.39-.82-6.61-1-1.32-.1-2.27-.58-2.23-2.08A1.8,1.8,0,0,1,266.49,66c3.52.61,6.54.73,6.94-4.17.08-1,1.6-1.18,2.54-.65,1.45.81,1.5,3,.84,3.49C273.81,67,276.35,68.88,277,70.92Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M148.05,22.28c-.61-1.36-1.53-2.72-.11-4.12s2.73-.71,3.94.32c1.53,1.3,5,.09,4.84,3.22-.1,1.78-1.29,4.47-2.66,5-2.7,1.08-1.63-1.93-2.17-3.21-.82-1.94-2.56-.95-3.89-1.26Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M190.05,30.39c-2.93-4.43,2.19-5.62,3.5-8.23,1.1-2.19,3.65-.2,5.44.25s1.85,2.53.35,2.82c-3.75.72-5.89,4.09-9.33,5.13Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M204.72,31.25a65.88,65.88,0,0,1,7.82,1.6c1.29.42,2.87,1.64,1.71,3.49a2,2,0,0,1-3.42.17c-1.71-2.12-3.63-1.54-5.76-1.13-1.73.32-3.67-.2-3.71-2.33C201.31,30.67,203.53,31.72,204.72,31.25Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M267,40.53c1.76-.94.6-2.74,1.15-4s1.43-2.33,3-1.94c1,.26,2,1.77,1.38,2.14-3.7,2.2,2.89,6.16-1.32,7.73-1.86.69-3.24-1.09-3.93-3a8.16,8.16,0,0,1-.23-1Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M225.44,32.39c-.52,2.29-2,3.31-3.7,2.82a6.23,6.23,0,0,1-4.63-5.78c-.08-.86.44-2.2,1.14-1.81C220.77,29,223.09,30.79,225.44,32.39Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M165,35.45c.76-.92-1.33-5.25,2.73-2.28,1.34,1,2.82,0,4.2-.51a2.61,2.61,0,0,1,3.16.61,1.81,1.81,0,0,1-.27,2.65c-.94,1-2.19,2.05-3.42,1.05A7.5,7.5,0,0,0,165,35.43Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M267,40.5a48.1,48.1,0,0,1-5.88-.08c-1.48-.19-2.1-1.51-2-3,.1-1.82,1.31-2,2.79-1.85,3,.28,6,.49,5.08,4.94Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M248.14,70.88l-4,.06c0-2-.07-4,0-6,0-1.44.45-2.78,2.09-2.87,2-.11,1.82,1.51,1.86,2.82C248.14,66.88,248.12,68.88,248.14,70.88Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M227,3.19c5.47-1.37,6.52-.09,4.87,5.93l-2.66,0c-.31-1.63-.74-3.18-2.2-4.18Q227,4.05,227,3.19Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M110.67,18.22c-.49,1.57-1.41,2.81-3.06,2.83-1.87,0-2.5-1.43-2.45-3.1,0-1.52.82-2.69,2.41-2.57A3.51,3.51,0,0,1,110.67,18.22Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M196.47,30.48c1.55-.1,2.8.59,2.79,2.13,0,2.05-1.61,2.73-3.42,2.68-1.51,0-2.63-.88-2.54-2.45C193.39,31,194.84,30.48,196.47,30.48Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M129.53,15.3a2.52,2.52,0,0,1,2.34,2.8c0,1.72-.78,3.08-2.63,2.93a2.82,2.82,0,0,1-2.8-3C126.58,16.47,128,15.63,129.53,15.3Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M254.27,41.47c.43-2.32-4.41-5.18-.4-6.57s2.91,3.51,4.06,5.63A5.44,5.44,0,0,0,254.27,41.47Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M226.91,16.56a3.82,3.82,0,0,1-3,3.41,1.77,1.77,0,0,1-2.4-1.74c.08-1.9,1-3.62,3.09-3.86C225.88,14.23,226.69,15.14,226.91,16.56Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M190,30.35c.79,1.49,2.46,3-.06,4.45a3.25,3.25,0,0,1-3.66,0,2.06,2.06,0,0,1-.87-2.58c.91-2.17,2.94-1.61,4.64-1.8Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M210.9,53.15c-.34,1.54-1.16,2.87-2.73,3.08a2.41,2.41,0,0,1-2.63-2.37,2.88,2.88,0,0,1,2.71-3C209.8,50.62,210.61,51.64,210.9,53.15Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M274.86,51.41c-1.92,0-2.27-1.62-2.62-3s.1-2.69,1.86-2.71,2.64,1.08,2.78,2.77A2.54,2.54,0,0,1,274.86,51.41Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M126.95,61.49c-.09,1.91-.68,3.1-2.24,3.15-1.83.06-2.51-1.25-2.5-2.93,0-1.49.72-2.64,2.23-2.73C126.34,58.88,126.78,60.35,126.95,61.49Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M232.88,34.82c-.12,1.34-.72,2.48-2.1,2.23-1.6-.3-3.33-1-3.52-3-.12-1.3.68-2.45,2.06-2.2C230.91,32.15,232.53,32.81,232.88,34.82Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M207.9,23.8a2.53,2.53,0,0,1-2.71,2.35c-1.69,0-3-.68-2.88-2.59.11-1.62,1.41-2.12,2.87-2.08A2.49,2.49,0,0,1,207.9,23.8Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M212.75,21.45c1.88.1,3.06.75,3,2.36s-1.15,2.35-2.67,2.35c-1.66,0-3-.64-2.89-2.59C210.36,21.88,211.76,21.6,212.75,21.45Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M213,8.2c1.56.05,2.92.63,2.87,2.5,0,1.55-1.22,2.24-2.69,2.25-1.65,0-3-.61-2.94-2.49C210.23,8.87,211.44,8.31,213,8.2Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M224.88,10.58a2.71,2.71,0,0,1-3.27,2.37c-1.44-.14-2.59-.88-2.47-2.48.15-1.88,1.59-2.34,3.19-2.24A2.5,2.5,0,0,1,224.88,10.58Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M244.51,29.32v0a12.36,12.36,0,0,1,3,1.61c1,.91,1.63,2.19.68,3.6-.57.83-1.24,1.74-2.37,1.46-1.63-.4-1.78-1.82-1.73-3.2C244.16,31.64,244.37,30.48,244.51,29.32Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M177.26,32.86A2.54,2.54,0,0,1,180,30.53c1.47,0,2.75.52,2.85,2.17.12,2-1.25,2.61-2.94,2.59A2.51,2.51,0,0,1,177.26,32.86Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M179,61.89c-.06,1.52-.69,2.8-2.28,2.73-1.88-.08-2.32-1.81-2.35-3.31a2.15,2.15,0,0,1,2.55-2.37C178.51,59.14,178.93,60.42,179,61.89Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M110,25.78c0,1.62-.32,3.18-2.19,3.33-1.69.13-2.19-1.41-2.26-2.72a2.55,2.55,0,0,1,2.08-3C109.3,23.15,110,24.16,110,25.78Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M234.28,38.49c1.69.11,2.51,1.21,2.62,2.9.08,1.25-.35,2.57-1.67,2.63-2,.09-2.79-1.49-3-3.25C232,39.41,232.73,38.55,234.28,38.49Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M248.76,41.24c-.36,1.46-1.09,2.88-2.81,2.79s-1.8-1.63-1.83-3c0-1.55.55-2.64,2.25-2.51C247.9,38.62,248.68,39.59,248.76,41.24Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M124.86,43c1.67.22,2.07,1.41,2.09,2.85s-.23,2.74-2,2.79a2.33,2.33,0,0,1-2.61-2.37A3.26,3.26,0,0,1,124.86,43Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M235.74,48.27c-.45,1.76-1.36,3-3,3.19a1.79,1.79,0,0,1-2.27-2c.18-1.46.74-3.13,2.44-3.44S235.12,47.19,235.74,48.27Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M98.13,65c.1-1.86.72-3.08,2.33-3.11a2.21,2.21,0,0,1,2.3,2.66,2.87,2.87,0,0,1-2.42,2.85C98.62,67.6,98.31,66.08,98.13,65Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M129.1,13.78a3.44,3.44,0,0,1-2.83-3,2,2,0,0,1,2-2.43c1.87-.15,2.62,1.14,2.77,2.83A2.21,2.21,0,0,1,129.1,13.78Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M110.77,11.1c-.63,1.33-1.37,2.81-3.14,2.55-1.31-.2-1.75-1.44-1.53-2.73.28-1.67,1.13-2.9,3-2.52A2.17,2.17,0,0,1,110.77,11.1Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M100.43,59.57c-1.27-.23-2.29-.95-2-2.28.38-1.54.9-3.39,3-3.34,1.56,0,1.57,1.4,1.51,2.58C102.89,58.17,102.23,59.36,100.43,59.57Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M178.94,53.52c0,1.28-.34,2.58-1.69,2.68-1.72.14-2.75-1.17-3-2.75a2.08,2.08,0,0,1,2.3-2.59C178.06,50.87,178.81,52,178.94,53.52Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M124.63,51c1.76.19,2.27,1.3,2.28,2.75s-.51,2.66-2.08,2.85a2.2,2.2,0,0,1-2.55-2.31C122.18,52.59,123.35,51.66,124.63,51Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M103.11,52.25a2,2,0,0,1-1.77-2.57c.32-1.47.84-3,2.78-3,1.51,0,2,1.12,1.76,2.44A3.43,3.43,0,0,1,103.11,52.25Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M117.69,9.33a3.35,3.35,0,0,1-3.34,2.49A2.13,2.13,0,0,1,112.2,9.5c.09-1.93,1.49-2.48,3.17-2.34A2.22,2.22,0,0,1,117.69,9.33Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M246,46a2.68,2.68,0,0,1,2.59,2.5c.12,1.5-.49,3-2.34,3.14-1.38.1-2.05-.74-2.1-2.12C244.07,47.94,244.14,46.48,246,46Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M214.78,46.05c1.23,0,2,.7,2,1.83,0,1.8-.67,3.35-2.69,3.64a1.63,1.63,0,0,1-2-1.7A3.71,3.71,0,0,1,214.78,46.05Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M133.55,37.08c-1.54,0-2.35-.83-2.32-2.16.06-1.89,1.44-2.43,3-2.48,1.18,0,2.49,0,2.5,1.62C136.8,36.25,134.78,36.35,133.55,37.08Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M231,23.71a2.52,2.52,0,0,1-2.67,2.44c-1.43.08-2.84-.35-2.81-2.05a2.72,2.72,0,0,1,2.67-2.51A2.34,2.34,0,0,1,231,23.71Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M127,28.08c.11-1.66.14-3.41,2.15-3.35,1.63.05,1.86,1.59,1.86,3,0,1.53-.11,3.25-2.1,3.2C127.28,30.83,127.12,29.27,127,28.08Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M109.57,33.93c-.57,1.32-.77,3.16-2.66,3-1.63-.11-1.82-1.6-1.82-3s.5-2.65,2.2-2.55A2.12,2.12,0,0,1,109.57,33.93Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M229.21,9.1l2.66,0c2.45.92,1.9,3.16,2.15,5l0,0C230.74,14.12,228.17,13.39,229.21,9.1Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M234,14.16c3.71-.38,5.49,1.19,5,5.07l0,0c-3.8.48-5.37-1.32-5-5.07Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M108,41.66c-.15,1.54-.79,2.71-2.37,2.77-1.3,0-2.37-.77-2.14-2.15s.67-3.22,2.44-3.35S108,40.26,108,41.66Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M130,38.59a2.8,2.8,0,0,1-2.84,2.81c-1.48.07-2.12-.86-2-2.25a2.77,2.77,0,0,1,2.57-2.64C129.11,36.34,130,37,130,38.59Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M124.87,9.26c-.06,1.74-1.33,2.28-2.64,2.39a2.56,2.56,0,0,1-2.79-2.29c-.21-1.68,1.14-2.2,2.58-2.23A2.5,2.5,0,0,1,124.87,9.26Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M266.55,28.42c1.29.2,2.29.93,2,2.27s-.68,3.2-2.51,3.24-2-1.45-1.93-2.87A2.48,2.48,0,0,1,266.55,28.42Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M199.64,15.22c1.12.2,2.11.78,1.93,1.92a3.09,3.09,0,0,1-3.4,2.92A1.7,1.7,0,0,1,196.52,18,3.43,3.43,0,0,1,199.64,15.22Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M219.95,4.07c-.25,2-1.63,2-3,2s-2.49-.53-2.44-1.93C214.59,2,216.3,2,217.82,2.06A1.9,1.9,0,0,1,219.95,4.07Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M114.94,16.22c1.13.06,2.6.28,2.58,2s-1.49,1.95-2.87,2-2.38-.22-2.49-1.76C112,16.64,113.2,16.2,114.94,16.22Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M254.06,48.85c-.07,1.45-.36,2.74-2.18,2.67-1.53-.06-1.85-1.17-1.8-2.45s.29-2.89,1.95-3S254,47.42,254.06,48.85Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M170.67,51.53c-1.84-.21-2.57-1.4-2.62-3.09,0-1.08.38-2.11,1.6-2.12,1.8,0,2.62,1.39,3,2.9S171.95,51.3,170.67,51.53Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M216.25,44.21c-1.73-.23-2.13-1.45-2.18-2.89,0-1.22,0-2.49,1.57-2.7,1.73-.23,2.36.84,2.41,2.43S217.79,43.71,216.25,44.21Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M277,55.8c0,1.39-.06,2.78-1.91,2.85-1.49.06-2-.92-2-2.24s.1-2.91,1.68-3.17S276.87,54.35,277,55.8Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M150,31.41q0,.47,0,.94c-1.1,2-2.55,2.71-4.37,1a1.86,1.86,0,0,1,0-2.74C147.42,28.86,148.92,29.3,150,31.41Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M261,30.22c0,1.58,0,2.9-1.48,3s-2.3-1-2.47-2.49.21-2.81,1.84-2.91S260.76,29.33,261,30.22Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M251.9,66.75c-1.61,0-1.87-1.11-1.91-2.34,0-1.38.16-2.84,1.74-3.07s2.15,1.13,2.18,2.56S253.41,66.47,251.9,66.75Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M122,16.23c1.46.06,2.7.5,2.82,2.15s-1.12,1.8-2.32,1.83c-1.35,0-2.86-.09-3.07-1.74S120.63,16.35,122,16.23Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M207.64,58.92c1.6.13,2.25,1.16,2.29,2.66s-.23,2.82-2,2.86c-1.42,0-1.88-1.17-1.94-2.4S205.81,59.29,207.64,58.92Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M148,22.24a4.11,4.11,0,0,0,.17.46c1,1.89,1.55,3.79-.64,5.19a1.43,1.43,0,0,1-2.3-.92c-.59-2.44,0-4.28,2.82-4.69Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M227,3.19q0,.86,0,1.73c-1.29,1.66-2.9,1.57-4.36.49a1.68,1.68,0,0,1,0-2.66A2.87,2.87,0,0,1,227,3.19Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M139.94,41.63c-.18,1.85-.93,2.87-2.53,2.85a1.8,1.8,0,0,1-1.93-1.87A2.66,2.66,0,0,1,138,40C139.23,39.87,139.58,41,139.94,41.63Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M140.72,38.5c-1.33-.17-2.26-.69-2.25-1.86a2.68,2.68,0,0,1,2.46-2.72c1.15-.16,1.83.75,1.91,1.87A2.47,2.47,0,0,1,140.72,38.5Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M254.27,41.47a5.44,5.44,0,0,1,3.66-.94c2,2.17.58,3.42-1.36,3.91C254.2,45,253.72,43.52,254.27,41.47Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M126.95,70.93l-4.68,0c-.2-1.78-.09-3.68,2-3.87C126.91,66.87,127,69,126.95,70.93Z" transform="translate(0 0)" style="fill:#ffefb8"/><path d="M220.69,25.42c-1.18-.08-2.52-.1-2.45-1.75.06-1.29,1.19-1.46,2.22-1.45s2.52,0,2.44,1.72C222.84,25.24,221.72,25.36,220.69,25.42Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M234.1,186.89c.89-15,1.71-30.41,2.79-45.84.35-5.07,1.82-5.6,9.09-5.25,4.2.2,6.09,2.23,5.86,6.37q-1.39,25.44-2.84,50.88c-.24,4.08-3,4.72-6.37,4.55-3.59-.19-7.74.61-8.49-4.68A46.28,46.28,0,0,1,234.1,186.89Z" transform="translate(0 0)" style="fill:#a8a9ab"/><path d="M146,188.72c.16,8-1.37,9.53-10,8.91-3.28-.24-4.74-1.86-4.91-5.09q-1-19.15-2-38.3c-.22-4-.57-8.05-.79-12.08s1.7-6.15,5.88-6.35c7.27-.36,8.65.17,9.08,5.26.74,8.71,1.19,17.44,1.7,26.17C145.27,173.95,145.56,180.67,146,188.72Z" transform="translate(0 0)" style="fill:#a8a9ab"/><path d="M197.25,166.72c0,8.26-.13,16.53.05,24.79.12,5.15-2.59,6.24-6.94,6.14-6.29-.15-7.5-.86-7.52-6-.06-16.7.07-33.39-.07-50.09,0-5.86,3.57-5.75,7.67-5.85,4.39-.11,7,1.06,6.86,6.19C197.09,150.19,197.25,158.46,197.25,166.72Z" transform="translate(0 0)" style="fill:#a8a9ab"/><ellipse cx="270.89" cy="91.9" rx="2.44" ry="2.47" style="fill:#a8a9ab"/><ellipse cx="313.76" cy="165.79" rx="2.44" ry="2.47" style="fill:#a8a9ab"/><ellipse cx="108.92" cy="91.65" rx="2.44" ry="2.47" style="fill:#a8a9ab"/><ellipse cx="66.3" cy="166.05" rx="2.44" ry="2.47" style="fill:#a8a9ab"/><path d="M292,206c.59-.31,1.36-.66,2.09-1.08a20.36,20.36,0,0,0,7.87-7.43c1.37-2.4,2.54-.58,3.27.6a17.67,17.67,0,0,0,7,6.9c2.63,1.31,1.42,2.74-.2,3.55a15.92,15.92,0,0,0-7.25,7.27c-.52,1-1.55,2.36-2.57.73-2.34-3.75-4.87-7.18-9.09-8.92A1.5,1.5,0,0,1,292,206Z" transform="translate(0 0)" style="fill:#ffeeb3"/><path d="M36.49,7.1c.44-.23,1-.49,1.53-.79A14.92,14.92,0,0,0,43.78.86c1-1.76,1.86-.42,2.4.44a12.94,12.94,0,0,0,5.15,5.06c1.93,1,1,2-.14,2.6a11.66,11.66,0,0,0-5.31,5.32c-.38.76-1.14,1.73-1.88.54-1.71-2.75-3.57-5.26-6.66-6.54A1.1,1.1,0,0,1,36.49,7.1Z" transform="translate(0 0)" style="fill:#ffeeb3"/></svg></div>
+							</div>
+							<div class="col col-a-14">
+								<div class="page404__content">
+									<div class="main-title">404 - СТРАНИЦА НЕ НАЙДЕНА</div>
+									<div class="page404__text">К сожалению запрашиваемая вами страница не найдена. <br>Попробуйте найти её самостоятельно используя навигацию на сайте, либо воспользуйтесь поиском.</div>
+									<div class="page404__form">
+										<div class="page404__input input"><input type="text" placeholder="Поиск по 90 000 товаров"></div>
+										<div class="page404__btn btn btn_bg-black btn_text-white btn_extra btn_bold">ИСКАТЬ</div>
+									</div>
+									<div class="page404__links">
+										<div class="row">
+											<div class="col col-a-8">
+												<div class="footer__title">О КОМПАНИИ</div>
+												<div class="footer__nav">
+													<ul>
+														<li><a href="">Профиль</a></li>
+														<li><a href="">История</a></li>
+														<li><a href="">Контакты</a></li>
+														<li><a href="">Вакансии</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col col-a-8">
+												<div class="footer__title">ПОКУПАТЕЛЯМ</div>
+												<div class="footer__nav">
+													<ul>
+														<li><a href="">Как заказать</a></li>
+														<li><a href="">Доставка и оплата</a></li>
+														<li><a href="">Возврат</a></li>
+														<li><a href="">Вопросы и ответы</a></li>
+														<li><a href="">Рецепты</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col col-a-8">
+												<div class="footer__title">HoReCa</div>
+												<div class="footer__nav">
+													<ul>
+														<li><a href="">Преимущества</a></li>
+														<li><a href="">Наши клиенты</a></li>
+														<li><a href="">Контакты</a></li>
+														<li><a href="">Реквизиты</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="page404__foot">
+						<div class="contacts-block">
+							<div class="contacts-block__desc">Если вы перешли по ссылке и увидели эту страницу, напишите нам чтобы мы все перепроверили.</div>
+							<div class="contacts-block__wrap">
+								<a href="malto:info@raut-dv.ru" class="contacts-block__btn contacts-block__btn-email btn btn_border-yellow btn_text-black btn_small btn_hover-border-black"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 12" class="icon icon-mail"><title>mail</title><path d="M12.09,0H1.91A2,2,0,0,0,0,2v8a2,2,0,0,0,1.91,2H12.09A2,2,0,0,0,14,10V2A2,2,0,0,0,12.09,0Zm0,1.33a.61.61,0,0,1,.21,0L7,5.81,1.7,1.37a.61.61,0,0,1,.21,0Zm0,9.33H1.91A.65.65,0,0,1,1.27,10V2.72L6.6,7.19a.61.61,0,0,0,.8,0l5.33-4.47V10A.65.65,0,0,1,12.09,10.67Z" style="fill:#221e1f"/></svg>отправить сообщение</a>
+								<div class="contacts-block__phone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" class="icon icon-phone"><title>phone</title><path d="M3.3,3.82c.78-.78,1.46-1.26.08-3S1.08.44.32,1.2s0,4.11,3.16,7.32,6.45,4,7.32,3.16,2.07-1.67.36-3.05-2.2-.7-3,.08c-.54.54-1.92-.59-3.11-1.78S2.76,4.36,3.3,3.82Z" transform="translate(0 0)" style="fill:#fdc203"/></svg><span>Сообщить по телефону:</span><a href="tel:+74232060160">+7 423 206 01 60</a></div>
+								<div class="contacts-block__whatsapp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15.06" class="icon icon-whatsapp"><title>whatsapp_yellow</title><path d="M15,7.31A7.38,7.38,0,0,1,4.08,13.7L0,15l1.33-3.92A7.23,7.23,0,0,1,.27,7.31,7.36,7.36,0,1,1,15,7.31M7.64,1.16A6.17,6.17,0,0,0,1.45,7.31h0a6.08,6.08,0,0,0,1.18,3.6l-.77,2.28,2.38-.76a6.2,6.2,0,0,0,9.6-5.13,6.17,6.17,0,0,0-6.2-6.14h0M11.35,9c0-.07-.17-.12-.35-.21S9.94,8.26,9.78,8.2s-.29-.09-.41.09-.47.58-.57.7-.21.13-.39,0A4.94,4.94,0,0,1,7,8.15,5.4,5.4,0,0,1,6,6.91c-.11-.18,0-.28.08-.37l.27-.31a1.2,1.2,0,0,0,.18-.3.33.33,0,0,0,0-.31c0-.09-.41-1-.56-1.33A.42.42,0,0,0,5.5,4H5.16a.67.67,0,0,0-.48.22A2,2,0,0,0,4,5.69a3.47,3.47,0,0,0,.74,1.85,7.38,7.38,0,0,0,3.08,2.7c1.84.72,1.84.48,2.17.45a1.83,1.83,0,0,0,1.22-.85A1.49,1.49,0,0,0,11.35,9" transform="translate(0 0.06)" style="fill:#fcc103"/></svg><span>WhatsApp:</span><a href="tel:+79089940440">+7 908 994 0440</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="case">
+				<div class="row">
+					<div class="col col-a-5 hidden-c">
+						<div class="footer__title">О КОМПАНИИ</div>
+						<div class="footer__nav">
+							<ul>
+								<li><a href="">Профиль</a></li>
+								<li><a href="">История</a></li>
+								<li><a href="">Контакты</a></li>
+								<li><a href="">Вакансии</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col col-a-5 hidden-c">
+						<div class="footer__title">ПОКУПАТЕЛЯМ</div>
+						<div class="footer__nav">
+							<ul>
+								<li><a href="">Как заказать</a></li>
+								<li><a href="">Доставка и оплата</a></li>
+								<li><a href="">Возврат</a></li>
+								<li><a href="">Вопросы и ответы</a></li>
+								<li><a href="">Рецепты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col col-a-6 hidden-c">
+						<div class="footer__title">HoReCa</div>
+						<div class="footer__nav">
+							<ul>
+								<li><a href="">Преимущества</a></li>
+								<li><a href="">Наши клиенты</a></li>
+								<li><a href="">Контакты</a></li>
+								<li><a href="">Реквизиты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col col-a-8 col-c-24">
+						<div class="footer__phones">
+							<div class="footer__phone"><a href="tel:+74232060160">+7 423 206 01 60</a></div>
+							<div class="footer__phone footer__phone_small"><a href="tel:+79089940440">+7 908 994 04 40</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" class="icon icon-whatapp-black"><title>whatsapp</title><path d="M15,7.31A7.38,7.38,0,0,1,4.08,13.7L0,15l1.33-3.92A7.23,7.23,0,0,1,.27,7.31,7.36,7.36,0,0,1,15,7.31M7.64,1.16A6.17,6.17,0,0,0,1.45,7.31a6.08,6.08,0,0,0,1.18,3.6l-.77,2.28,2.38-.76a6.2,6.2,0,0,0,9.6-5.13A6.17,6.17,0,0,0,7.64,1.16M11.35,9c0-.07-.17-.12-.35-.21S9.94,8.26,9.78,8.2s-.29-.09-.41.09-.47.58-.57.7-.21.13-.39,0A4.94,4.94,0,0,1,7,8.15,5.4,5.4,0,0,1,6,6.91c-.11-.18,0-.28.08-.37s.18-.21.27-.31a1.2,1.2,0,0,0,.18-.3.33.33,0,0,0,0-.31c0-.09-.41-1-.56-1.33S5.61,4,5.5,4L5.16,4a.67.67,0,0,0-.48.22A2,2,0,0,0,4,5.69a3.47,3.47,0,0,0,.74,1.85,7.38,7.38,0,0,0,3.08,2.7c1.84.72,1.84.48,2.17.45a1.83,1.83,0,0,0,1.22-.85A1.49,1.49,0,0,0,11.35,9" style="fill:#010101"/></svg></div>
+						</div>
+						<div class="footer__mode">Ежедневно с 10 до 20 вы можете оформить заказ по телефону или получить ответы на любые интересующие вас вопросы.</div>
+						<div class="footer__email"><a href="">info@rautdv.ru</a></div>
+						<div class="footer__socials">
+							<div class="footer__socials-title"><span>РаутМаркет</span> в соц.сетях</div>
+							<div class="footer__socials-list socials">
+								<ul>
+									<li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.91 27.91"><title>facebook</title><path d="M12.08,21.54h3.14V14h2.09l.28-2.62H15.21V10c0-.68.07-1,1-1h1.31V6.36H15.48c-2.51,0-3.4,1.27-3.4,3.4v1.57H10.51V14h1.57ZM.09,0H28V27.91H.09Z" transform="translate(-0.09)" style="fill:#3b599d"/></svg></a></li>
+									<li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"><title>vk</title><path d="M0,0V28H28V0ZM20.72,18.84H19.1c-.54,0-.54,0-1.08-.54-.69-.69-1.61-1.61-2.15-1.61a1.16,1.16,0,0,0-1.08,1.08c0,.3,0,1.08-.54,1.08s-.27,0-.54,0c-1,0-2.3-.15-4.18-2.1a17.34,17.34,0,0,1-3.89-6.51c-.07-.17,0-.52.54-.52l1.61,0c.54,0,.65-.1,1.08.54C10,11.84,11,14,11.57,14s.54-2.15.54-2.15V10.77c0-.76-.92-.52-1.08-.54s.54-.54.54-.54a3.13,3.13,0,0,1,1.61-.54H14.8c.8.19.54,1.45.54,3.23,0,.57,0,1.61.54,1.61s.54-.54,1.08-1.61a20.12,20.12,0,0,1,1.61-2.69c.33-.49,3.09,0,3.2.36s-.6,1.54-1.59,2.86c-1.63,2.17-1.08,1.61,0,2.69,1.25,1.25,1.61,1.82,1.61,2.15A1.09,1.09,0,0,1,20.72,18.84Z" style="fill:#0578aa"/></svg></a></li>
+									<li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"><title>odnoklasniki</title><path d="M14,11.73A1.77,1.77,0,1,0,12.23,10,1.79,1.79,0,0,0,14,11.73Z" style="fill:#f07f35"/><path d="M0,0V28H28V0ZM14,6.43A3.53,3.53,0,1,1,10.47,10,3.51,3.51,0,0,1,14,6.43Zm4,9.44c-.61.35-2.52,1.16-2.52,1.16l2.12,2.72a1.93,1.93,0,0,1,.4.81,1,1,0,0,1-1,1,1,1,0,0,1-.76-.35L14,18.54l-2.32,2.67a1,1,0,0,1-.76.35,1,1,0,0,1-1-1,1.63,1.63,0,0,1,.4-.81L12.49,17s-1.92-.81-2.52-1.16a.92.92,0,0,1-.5-.86,1,1,0,0,1,1-1C11,14,12,15,14,15s3-1,3.53-1a1,1,0,0,1,1,1A1,1,0,0,1,18,15.87Z" style="fill:#f07f35"/></svg></a></li>
+									<li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"><title>instagram</title><path d="M17.38,7.44H10.69a3.3,3.3,0,0,0-2.37.84,3.24,3.24,0,0,0-.88,2.37v6.65a3.26,3.26,0,0,0,.88,2.4,3.36,3.36,0,0,0,2.37.84h6.62a3.36,3.36,0,0,0,2.37-.84,3.17,3.17,0,0,0,.94-2.37V10.66a3.35,3.35,0,0,0-.88-2.34A3.24,3.24,0,0,0,17.38,7.44ZM14,18.12a4.15,4.15,0,0,1,0-8.31,4.15,4.15,0,0,1,0,8.31Zm4.32-7.47a.94.94,0,1,1,.94-.94A.94.94,0,0,1,18.32,10.66Z" style="fill:#3a5ba7"/><path d="M14,11.31A2.66,2.66,0,1,0,16.66,14,2.67,2.67,0,0,0,14,11.31Z" style="fill:#3a5ba7"/><path d="M0,0V28H28V0ZM22,17.34a4.65,4.65,0,0,1-1.33,3.44A4.79,4.79,0,0,1,17.31,22H10.69a4.74,4.74,0,0,1-3.38-1.27A4.67,4.67,0,0,1,6,17.31V10.66A4.45,4.45,0,0,1,10.66,6h6.69A4.5,4.5,0,0,1,22,10.66Z" style="fill:#3a5ba7"/></svg></a></li>
+									<li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"><title>youtube</title><polygon points="12.57 16.14 16.96 13.61 12.57 11.08 12.57 16.14" style="fill:#e6342a"/><path d="M0,0V28H28V0ZM21.64,17.74a2,2,0,0,1-1.71,1.56,53.16,53.16,0,0,1-5.93.22,53.16,53.16,0,0,1-5.93-.22,2,2,0,0,1-1.71-1.56A17,17,0,0,1,6.09,14a17,17,0,0,1,.28-3.74A2,2,0,0,1,8.08,8.7,53.15,53.15,0,0,1,14,8.48a53.14,53.14,0,0,1,5.93.22,2,2,0,0,1,1.71,1.56A17,17,0,0,1,21.91,14,17,17,0,0,1,21.64,17.74Z" style="fill:#e6342a"/></svg></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="case">
+				<div class="row">
+					<div class="col col-a-4 col-b-5 col-c-24">
+						<div class="footer__copy">© ООО «РаутМаркет», 2017</div>
+					</div>
+					<div class="col col-a-12 col-b-14 col-c-24">
+						<div class="footer__links">
+							<ul>
+								<li><a href="">Юридическая информация</a></li>
+								<li><a href="">Политика обработки персональных данных</a></li>
+								<li><a href="">Обратная связь</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col col-a-8 col-b-5 col-c-24">
+						<div class="footer__dev"><a href="" target="_blank">Дизайн сайта - <span>студия Кефирок</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="popups">
+		<div class="popup popup_auth" id="popup-auth">
+			<div class="popup__close" data-fancybox-close><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon-close"><title>close</title><polygon points="16 1.69 14.31 0 8 6.31 1.69 0 0 1.69 6.31 8 0 14.31 1.69 16 8 9.69 14.31 16 16 14.31 9.69 8 16 1.69" style="fill:#010101"/></svg></div>
+			<div class="popup__title">АВТОРИЗАЦИЯ</div>
+			<div class="popup__body">
+				<div class="popup__element element">
+					<div class="element__title">Электронная почта</div>
+					<div class="element__input input w100p"><input type="text"></div>
+					<div class="element__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" class="icon icon-cross-red"><title>delete_active</title><polygon points="10 1.05 8.95 0 5 3.95 1.05 0 0 1.05 3.95 5 0 8.95 1.05 10 5 6.05 8.95 10 10 8.95 6.05 5 10 1.05" style="fill:#e04141"/></svg></div>
+				</div>
+				<div class="popup__element element">
+					<div class="element__title">Пароль</div>
+					<div class="element__input input w100p"><input type="password"></div>
+					<div class="element__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" class="icon icon-cross-red"><title>delete_active</title><polygon points="10 1.05 8.95 0 5 3.95 1.05 0 0 1.05 3.95 5 0 8.95 1.05 10 5 6.05 8.95 10 10 8.95 6.05 5 10 1.05" style="fill:#e04141"/></svg></div>
+				</div>
+				<div class="popup__submit">
+					<button class="popup__btn btn btn_extra btn_bg-green btn_text-white inline-block btn_bold">войти</button>
+					<div class="popup__link inline-block"><a href="">Забыли пароль?</a></div>
+				</div>
+			</div>
+			<div class="popup__foot">
+				<div class="auth-soc">
+					<div class="auth-soc__title">Авторизация через соц.сети</div>
+					<div class="auth-soc__list">
+						<ul>
+							<li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" class="icon icon-auth-vk"><title>auth_vk</title><path d="M25.67,0H2.33A2.34,2.34,0,0,0,0,2.33V25.67A2.34,2.34,0,0,0,2.33,28H25.67A2.34,2.34,0,0,0,28,25.67V2.33A2.34,2.34,0,0,0,25.67,0ZM21,15.75c1.34,1.34,1.75,2,1.75,2.33a1.19,1.19,0,0,1-1.17,1.17H19.83c-.58,0-.58,0-1.17-.58-.76-.76-1.75-1.75-2.33-1.75a1.25,1.25,0,0,0-1.17,1.17c0,.35,0,1.17-.58,1.17H14c-1.17-.06-2.51-.17-4.55-2.28a19,19,0,0,1-4.2-7.06c-.06-.23,0-.58.58-.58H7.58c.58,0,.7-.12,1.17.58C9.92,11.67,11.08,14,11.67,14s.58-2.33.58-2.33V10.5c0-.82-1-.58-1.17-.58s.58-.58.58-.58a3.42,3.42,0,0,1,1.75-.58h1.75c.88.23.58,1.58.58,3.5,0,.64.06,1.75.58,1.75s.58-.58,1.17-1.75a18.73,18.73,0,0,1,1.75-2.92c.41-.53,3.38.06,3.5.41S22,11.38,21,12.83C19.25,15.17,19.83,14.58,21,15.75Z" style="fill:#55779c"></path></svg></a></li>
+							<li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" class="icon icon-auth-ok"><title>auth_ok</title><path d="M14,10.8a2.49,2.49,0,1,0-2.49-2.49A2.52,2.52,0,0,0,14,10.8Z" style="fill:#ee7317"></path><path d="M25.67,0H2.33A2.34,2.34,0,0,0,0,2.33V25.67A2.34,2.34,0,0,0,2.33,28H25.67A2.34,2.34,0,0,0,28,25.67V2.33A2.34,2.34,0,0,0,25.67,0ZM14,3.33a5,5,0,1,1-5,5A4.95,4.95,0,0,1,14,3.33Zm5.69,13.3c-.85.5-3.56,1.64-3.56,1.64l3,3.84a2.72,2.72,0,0,1,.57,1.14,1.43,1.43,0,0,1-1.42,1.42,1.35,1.35,0,0,1-1.07-.5L14,20.4l-3.27,3.77a1.35,1.35,0,0,1-1.07.5,1.43,1.43,0,0,1-1.42-1.42,2.3,2.3,0,0,1,.57-1.14l3.06-3.84s-2.7-1.14-3.56-1.64a1.29,1.29,0,0,1-.71-1.21A1.43,1.43,0,0,1,9,14c.71,0,2.13,1.42,5,1.42S18.27,14,19,14a1.43,1.43,0,0,1,1.42,1.42A1.38,1.38,0,0,1,19.69,16.63Z" style="fill:#ee7317"></path></svg></a></li>
+							<li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" class="icon icon-auth-fb"><title>auth_fb</title><path d="M0,25.67A2.33,2.33,0,0,0,2.33,28H25.67A2.33,2.33,0,0,0,28,25.67V2.33A2.33,2.33,0,0,0,25.67,0H2.33A2.33,2.33,0,0,0,0,2.33V25.67ZM14.58,24.5V15.17H12.25v-3.5h2.33c0-6,.26-6.42,7.58-6.42v3.5c-3.86,0-3.5.22-3.5,2.92h3.5v3.5h-3.5V24.5H14.58Z" style="fill:#3d5a9b"></path></svg></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="popup__desc"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" class="icon icon-cross-red"><title>delete_active</title><polygon points="10 1.05 8.95 0 5 3.95 1.05 0 0 1.05 3.95 5 0 8.95 1.05 10 5 6.05 8.95 10 10 8.95 6.05 5 10 1.05" style="fill:#e04141"/></svg><span>Неверная комбинация логина и пароля</span></div>
+		</div>
+		<div class="popup popup_recepe" id="popup-recepe">
+			<div class="popup__close" data-fancybox-close><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon-close"><title>close</title><polygon points="16 1.69 14.31 0 8 6.31 1.69 0 0 1.69 6.31 8 0 14.31 1.69 16 8 9.69 14.31 16 16 14.31 9.69 8 16 1.69" style="fill:#010101"/></svg></div>		
+			<div class="popup__head">
+				<div class="popup__title">ОТПРАВИТЬ НА ПОЧТУ</div>
+				<div class="popup__text">Введите почту. На указанный вами адрес электронной почты будет выслан данный рецепт.</div>
+			</div>
+			<div class="popup__body">
+				<div class="popup__input input"><input type="text" placeholder="Электронная почта"></div>
+				<div class="popup__policy">
+					<div class="checkbox">
+						<input type="checkbox">
+						<label>Даю своё согласие на обработку и хранение моих персональных данных</label>
+					</div>
+				</div>
+				<button class="popup__btn btn btn_extra btn_bg-green btn_text-white btn_bold">отправить</button>
+			</div>
+		</div>
+		<div class="popup popup_feedback" id="popup-feedback">
+			<div class="popup__close" data-fancybox-close><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon-close"><title>close</title><polygon points="16 1.69 14.31 0 8 6.31 1.69 0 0 1.69 6.31 8 0 14.31 1.69 16 8 9.69 14.31 16 16 14.31 9.69 8 16 1.69" style="fill:#010101"/></svg></div>
+			<div class="popup__title">ОБРАТНАЯ СВЯЗЬ</div>
+			<div class="popup__desc mid">Если у вас есть какой-то вопрос, задайте его через данную форму.</div>
+			<div class="popup__elements">
+				<div class="row">
+					<div class="col col-a-12">
+						<div class="popup__element element">
+							<div class="element__title">Электронная почта <span class="color-red">*</span></div>
+							<div class="element__input input w100p"><input type="text"></div>
+						</div>
+					</div>
+					<div class="col col-a-12">
+						<div class="popup__element element element_right">
+							<div class="element__title">Телефон</div>
+							<div class="element__input input input_tel w100p"><input type="text"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-a-24">
+						<div class="popup__element element">
+							<div class="element__title">Сообщение <span class="color-red">*</span></div>
+							<div class="element__area area w100p"><textarea></textarea></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="popup__submit">
+				<button class="popup__btn btn btn_extra btn_bg-green btn_text-white inline-block btn_bold">отправить</button>
+				<div class="popup__policy inline-block">
+					<div class="checkbox">
+						<input type="checkbox">
+						<label>Даю своё согласие на обработку и хранение моих персональных данных</label>
+					</div>
+				</div>
+			</div>
+			<div class="popup__required"><span class="color-red">*</span> - поля обязательные для заполнения</div>
+			<div class="contacts-block__wrap">
+				<div class="contacts-block__phone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" class="icon icon-phone"><title>phone</title><path d="M3.3,3.82c.78-.78,1.46-1.26.08-3S1.08.44.32,1.2s0,4.11,3.16,7.32,6.45,4,7.32,3.16,2.07-1.67.36-3.05-2.2-.7-3,.08c-.54.54-1.92-.59-3.11-1.78S2.76,4.36,3.3,3.82Z" transform="translate(0 0)" style="fill:#fdc203"></path></svg><a href="tel:+74232060160">+7 423 206 01 60</a></div>
+				<div class="contacts-block__whatsapp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15.06" class="icon icon-whatsapp"><title>whatsapp_yellow</title><path d="M15,7.31A7.38,7.38,0,0,1,4.08,13.7L0,15l1.33-3.92A7.23,7.23,0,0,1,.27,7.31,7.36,7.36,0,1,1,15,7.31M7.64,1.16A6.17,6.17,0,0,0,1.45,7.31h0a6.08,6.08,0,0,0,1.18,3.6l-.77,2.28,2.38-.76a6.2,6.2,0,0,0,9.6-5.13,6.17,6.17,0,0,0-6.2-6.14h0M11.35,9c0-.07-.17-.12-.35-.21S9.94,8.26,9.78,8.2s-.29-.09-.41.09-.47.58-.57.7-.21.13-.39,0A4.94,4.94,0,0,1,7,8.15,5.4,5.4,0,0,1,6,6.91c-.11-.18,0-.28.08-.37l.27-.31a1.2,1.2,0,0,0,.18-.3.33.33,0,0,0,0-.31c0-.09-.41-1-.56-1.33A.42.42,0,0,0,5.5,4H5.16a.67.67,0,0,0-.48.22A2,2,0,0,0,4,5.69a3.47,3.47,0,0,0,.74,1.85,7.38,7.38,0,0,0,3.08,2.7c1.84.72,1.84.48,2.17.45a1.83,1.83,0,0,0,1.22-.85A1.49,1.49,0,0,0,11.35,9" transform="translate(0 0.06)" style="fill:#fcc103"></path></svg><span>WhatsApp:</span><a href="tel:+79089940440">+7 908 994 0440</a></div>
+			</div>
+		</div>
+		<div class="popup popup_thanks">
+			<div class="popup__close" data-fancybox-close><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon-close"><title>close</title><polygon points="16 1.69 14.31 0 8 6.31 1.69 0 0 1.69 6.31 8 0 14.31 1.69 16 8 9.69 14.31 16 16 14.31 9.69 8 16 1.69" style="fill:#010101"/></svg></div>
+			<div class="popup__title">СООБЩЕНИЕ ОТПРАВЛЕНО</div>
+			<div class="popup__text">
+				<p>Ваше сообщение успешно отправлено.</p>
+				<p>В ближайшее время мы подготовим ответ.</p>
+			</div>
+		</div>
+		<div class="popup popup_policy" id="popup-policy">
+			<div class="popup__close" data-fancybox-close><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon-close"><title>close</title><polygon points="16 1.69 14.31 0 8 6.31 1.69 0 0 1.69 6.31 8 0 14.31 1.69 16 8 9.69 14.31 16 16 14.31 9.69 8 16 1.69" style="fill:#010101"/></svg></div>
+			<div class="popup__title">СООБЩЕНИЕ ОТПРАВЛЕНО</div>
+			<div class="popup__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos magni quaerat perspiciatis, neque iure, nobis odit facere pariatur laboriosam non tempora maiores itaque dicta rem nisi minus dolore repudiandae debitis, sint quam molestias nulla cumque fugiat. Recusandae laboriosam quam, eaque soluta facere consequatur corporis magnam suscipit est neque inventore minus quaerat accusantium distinctio nobis, officia labore. Reprehenderit et, quasi quod odio doloribus molestiae omnis nobis ratione! Vero consequuntur excepturi, possimus sit fugiat saepe sequi explicabo placeat iusto ducimus accusantium recusandae optio ut voluptates, ullam dolore enim soluta tenetur et porro qui. Vitae ipsa nesciunt commodi. Harum quam optio quibusdam, et ad nesciunt facilis unde illo vero magnam repudiandae quos placeat consectetur, aliquam omnis in enim officia soluta. Cupiditate possimus modi, fugit tempore labore saepe praesentium est nihil nisi eveniet dolorem dolor dolore aspernatur debitis odio, nulla a nesciunt suscipit. Rerum, aspernatur, officia. Cumque dignissimos quae deserunt voluptate consectetur quisquam, est iure labore dicta. Hic, maxime dolorum eligendi ex libero ipsam quam repellendus iste asperiores, amet molestias inventore nulla? Corporis distinctio repellendus optio harum corrupti quisquam adipisci, saepe soluta vitae, laudantium pariatur quidem illo nesciunt debitis, dicta deserunt voluptate facilis esse! Veritatis illo rerum consequatur, deleniti. Impedit dolorum, reiciendis aperiam nobis placeat sint dolorem? Consequatur consectetur soluta aspernatur, animi harum laboriosam iusto provident iste ea officiis sint consequuntur velit sed quidem doloribus voluptatibus magni corporis amet similique. Laboriosam magnam, odio dolorem non deserunt accusamus sequi dolores qui ipsum ipsam reiciendis ad debitis alias culpa doloremque voluptatibus voluptate minima, laborum, deleniti placeat ut perspiciatis voluptas animi! Eaque neque tenetur, quos quaerat similique recusandae temporibus porro iste eos, vero in quo perferendis non molestiae, quam! Minus, cum. Magnam, non quo, a ut magni, neque ducimus vel placeat odit facere quam ad sint nam commodi voluptatibus quisquam. Sapiente iste quae, accusamus, odio dolores, repellat nobis, ratione maxime perferendis soluta sed? Similique architecto dignissimos qui quod corrupti, sit illo officia exercitationem possimus minima doloremque aspernatur repellat repellendus quasi facilis perspiciatis eaque dolor consequatur nihil ab animi dolore hic quibusdam! Optio dolor deleniti quia veritatis, rerum cumque porro eveniet, animi repellat repudiandae! Placeat alias, tenetur mollitia voluptatibus laborum asperiores, ducimus sit dolores. Veniam mollitia vero reprehenderit natus, officiis saepe ea asperiores ducimus id sint minus ullam distinctio. Temporibus debitis ut quisquam, et, aliquid ducimus. Laborum aspernatur quaerat laboriosam quasi iure itaque obcaecati et officia, dolore excepturi molestiae architecto dolor, quae iusto impedit totam! Ea vero, laboriosam sit similique necessitatibus dolores perferendis, exercitationem numquam. At quibusdam adipisci, autem reprehenderit laboriosam! Laudantium explicabo, aperiam officiis dolores quas sint dignissimos maiores magnam illo, facere odit nihil. Accusamus aliquam eligendi quibusdam, eos vel sapiente! Est, porro ea. Excepturi, voluptates dolorem facere commodi sequi id unde cumque nemo recusandae. Placeat saepe totam et quod aperiam voluptas nisi eveniet. Deserunt explicabo a provident numquam error autem quasi, odio unde vel, esse perferendis exercitationem tempore ratione aperiam repudiandae eos reprehenderit. Nemo est, sint laborum impedit sequi pariatur ipsa dolorum saepe repellat numquam cupiditate optio earum, tempora iusto quas. Ipsum vitae quos soluta eaque cumque officia hic corporis voluptates autem sapiente excepturi officiis, dolores iste molestiae eveniet recusandae blanditiis laborum, itaque veritatis amet quaerat debitis earum a? Nulla doloribus omnis mollitia, culpa aliquam optio impedit nesciunt exercitationem quae fugiat voluptas possimus ipsam eligendi, repellat. Ex dolores assumenda possimus dolorum vel vero, eaque optio deleniti, commodi accusantium at beatae, sapiente debitis quam fugit quidem reiciendis repudiandae. Doloribus at inventore, laudantium aspernatur omnis incidunt nobis blanditiis asperiores fuga possimus? Labore voluptates ea esse aliquam, corrupti nisi et laborum dolor illum molestias id fugiat doloremque recusandae sint! Autem, voluptatem, velit. Voluptatum sint perspiciatis, quas esse fugit accusamus. Quisquam magni cupiditate quaerat, architecto assumenda dignissimos sapiente harum aspernatur. Quibusdam laudantium minus fugit sed omnis quidem tenetur veritatis iste! Quidem consequuntur provident saepe tempora rerum totam dolorum eius inventore repellendus nisi quia, sequi et quam repellat rem asperiores iste quae consectetur a cum, ex voluptatem. Corporis similique doloribus voluptatem earum ratione dolore ea repudiandae provident nobis mollitia eius suscipit vitae cupiditate reiciendis ipsa odio, sit velit laborum asperiores alias molestias error! Iste voluptate, consectetur totam sint quaerat incidunt odit fugit dolore eligendi, quasi ad porro ducimus repudiandae perferendis quis, error excepturi asperiores laudantium laboriosam enim recusandae architecto. Ipsam saepe incidunt sit fugit nobis amet, corrupti beatae dolor autem dolorum quibusdam inventore dolorem voluptate voluptas, nesciunt nulla magni ipsum eveniet deserunt ratione? Ullam deserunt adipisci temporibus perspiciatis accusamus velit odit quas magni laborum, ipsa aut consectetur rerum id nam expedita error nulla voluptatem! Veritatis voluptatum reprehenderit quia corporis, id nisi doloribus laudantium sunt cum veniam dignissimos distinctio iste, a! Ea possimus esse illum amet quaerat facilis, tempora, beatae obcaecati doloremque reiciendis consequuntur tenetur! Provident quaerat quidem porro error fuga cumque laudantium temporibus! Tempora repudiandae atque iste, debitis voluptates voluptatem nihil magnam veniam, rerum aspernatur in repellat numquam corporis? Quasi eos amet exercitationem quidem, odit velit enim consectetur. Vel nisi eligendi ullam sunt odio minima nihil, dicta optio aperiam enim est ipsa temporibus deleniti, omnis dignissimos ex voluptatum repudiandae molestiae assumenda. Placeat totam, excepturi, ipsum harum corporis necessitatibus similique quis sunt. Assumenda obcaecati, repellat voluptas! At odit natus minus veritatis laboriosam nulla, provident incidunt nihil libero. A, veniam dolorum corporis doloribus laboriosam. Omnis fugiat, voluptas dicta tempora molestias libero non quos quam vero esse at repudiandae quaerat molestiae, aspernatur veniam, cupiditate perspiciatis illo nostrum sunt, voluptatibus iste consectetur accusamus! Incidunt minima doloribus, quia id doloremque mollitia sapiente dolor quod voluptates, accusantium minus cupiditate similique soluta a voluptatem dolorum repellat, eveniet ducimus expedita? Magni corporis nobis voluptatem aliquam nostrum provident consectetur tempore asperiores, laborum cumque ipsa ea deserunt repellendus odit beatae numquam! Saepe sint animi quam, error harum corrupti ex omnis asperiores iure doloremque cumque beatae inventore, possimus ea qui, perspiciatis vitae adipisci sed minima minus amet! Iusto incidunt blanditiis nesciunt, ut ab. Repudiandae corporis eaque sit laborum, commodi tempore, quam aperiam expedita neque voluptatem delectus recusandae dolorem dolore. Commodi animi aspernatur saepe consequuntur fuga enim, dolore corporis quisquam ab optio quibusdam obcaecati tenetur aliquid, dignissimos vitae est. Doloribus quibusdam aliquam deserunt.</div>
+		</div>
+	</div>
+</body>
+</html>

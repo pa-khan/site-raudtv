@@ -1,13 +1,590 @@
-@media screen and (max-width: 1199px)
-	.container
-		width: 950px
+@media screen and (max-width: 1230px)
+	.case
+		width: 992px
+
+	.header
+		&__auth
+			padding-left: 15px
+
+	.slider
+		&__slide
+			width: 772px
+		&__wrap
+			top: 30px
+		&__desc
+			margin-bottom: 30px
+		&__nav
+			.slick-slide
+				padding-top: 21px
+				padding-bottom: 19px
+				height: 103px
+			
+	.product
+		&_small
+			.product
+				&__price
+					&-new
+						padding-left: 8px
+						padding-right: 3px
+						margin-right: 5px
+					
+			
+	.reviews
+		&__logo
+			margin-left: 15px
+		&__text
+			max-width: 290px
+		.slick-next
+			right: 24px
 
 
-@media screen and (max-width: 970px)
-	.container
+
+@media screen and (max-width: 1020px)
+	.case
+		position: relative
 		width: 750px
+
+	.hidden-c
+		display: none
+	.show-c
+		display: block
+
+	.panel
+		padding-top: 0
+		padding-bottom: 0
+		&__contacts
+			padding-top: 14px
+			li
+				margin-left: 0
+				margin-right: 0
+				&:last-of-type
+					margin-left: 22px
+					margin-right: 0
+				.icon
+					margin-right: 0
+			a
+				span
+					display: none
+		&__auth
+			padding-top: 14px
+			text-align: right
+			a
+				font-size: 12px
+				color: #fff
+				&:hover
+					color: #ffc300
+			li
+				margin-left: 10px
+				&:first-of-type
+					margin-left: 0
+			.icon
+				position: relative
+				top: -1px
+				width: 10px
+				margin-left: 12px
+				path
+					fill: #fff
+				&:hover
+					path
+						fill: #ffc300
+		&__nav
+			display: none
+			position: absolute
+			top: 45px
+			left: 10px
+			right: 10px
+			background: #262626
+			z-index: 10
+			li
+				position: relative
+				display: block
+				border-bottom: 1px solid #353535
+				margin-right: 0
+				ul
+					display: none
+					padding-bottom: 20px
+					li
+						border-bottom: none
+					a
+						padding: 7px 25px 7px 50px
+			a
+				font-size: 15px
+				color: #fff
+				padding: 15px 25px
+			
+		&__item
+			&-drop
+				&:before
+					content: ''
+					display: none
+					background-image: url(../../img/sprite.png)
+					background-position: -154px -84px
+					width: 8px
+					height: 5px
+					display: block
+					position: absolute
+					top: 22px
+					right: 25px
+				&_open
+					> a
+						#fcc203
+					&:before
+						background-position: -146px -84px
+				&:hover
+					&:before
+						// background-position: -146px -84px
+			
+	.mobile-btn
+		width: 45px
+		height: 45px
+		background: #262626
+		padding-top: 15px
+		cursor: pointer
+		span
+			position: relative
+			display: block
+			width: 20px
+			height: 2px
+			background-color: #fff
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 4px
+			transition: .3s
+			&:last-of-type
+				margin-bottom: 0
+		&_click
+			span
+				&:nth-of-type(1)
+					top: 6px
+					transform: rotate(-45deg)
+
+				&:nth-of-type(2)
+					opacity: 0
+
+				&:nth-of-type(3)
+					top: -6px
+					transform: rotate(45deg)
+
+
+	.header
+		padding-top: 20px
+		padding-bottom: 18px
+		&__search
+			margin-top: 15px
+		&__data
+			width: 112px
+			padding-left: 0
+			position: relative
+			margin-left: auto
+		&__total-price
+			top: 57px
+			left: 0
+			position: absolute
+		&__logo
+			img
+				margin-left: auto
+
+	.search
+		&__example
+			display: none
+			
+
+	.nav
+		.case
+			padding-left: 0
+			padding-right: 0
+			width: 100%
+		&__btn
+			font-size: 0
+			padding-top: 20px
+			padding-bottom: 20px
+			&_click
+				span
+					&:nth-of-type(1)
+						top: 6px
+						transform: rotate(-45deg)
+
+					&:nth-of-type(2)
+						opacity: 0
+
+					&:nth-of-type(3)
+						top: -6px
+						transform: rotate(45deg)
+				.nav
+					&__btn
+						display: none
+			&-wrap
+				width: 112px
+				height: 18px
+				margin-left: auto
+				margin-right: auto
+				cursor: pointer
+			&-icon
+				span
+					position: relative
+					display: block
+					width: 20px
+					height: 2px
+					background-color: #000
+					margin-left: auto
+					margin-right: auto
+					margin-bottom: 4px
+					transition: .3s
+					&:last-of-type
+						margin-bottom: 0
+			&-text
+				font-size: 16px
+				font-weight: 700
+				color: #303030
+				margin-left: 15px
+				position: relative
+				top: -1px
+			&-icon, &-text
+				display: inline-block
+				vertical-align: middle
+
+
+			
+		&__wrap
+			display: none
+
+		&__item
+			position: relative
+			width: 100%
+			border-top: 1px solid #e3e3e3
+			&:hover
+				.nav__sub
+					display: none
+			&-drop
+				&:before
+					z-index: 1
+					content: ''
+					display: none
+					background-image: url(../../img/sprite.png)
+					background-position: -127px -92px
+					width: 8px
+					height: 5px
+					display: block
+					position: absolute
+					top: 22px
+					right: 25px
+					transition: .3s
+			&_open
+				&:before
+					transform: rotate(180deg)
+		&__link
+			text-align: left
+			padding: 15px !important
+
+		&__sub
+			display: none
+			opacity: 1
+			position: relative
+			top: 0
+			left: 0
+			right: 0
+			padding-left: 0
+			padding-right: 0
+			padding-top: 10px
+			padding-bottom: 10px
+			border: none
+			box-shadow: none
+			border-top: 1px solid #e3e3e3
+		&__subnav
+			width: 100%
+			padding-top: 0
+			padding-right: 0
+			li
+				margin-bottom: 0
+				a
+					font-size: 14px
+			a
+				display: block
+				padding: 7px 15px 7px 40px
+				border-bottom: none
+
+				&:hover
+					background: #f2f2f2
+		&__product
+			display: none
+			
+	.slider
+		margin-top: 0
+		overflow: hidden
+		.case
+			padding-left: 0
+			padding-right: 0
+		&__nav
+			display: none
+		&__wrap
+			left: 38px
+			top: 50px
+		&__title
+			font-size: 32px
+			line-height: 39px
+		&__desc
+			font-size: 25px
+		&__btn
+			width: 190px
+			font-size: 15px
+			border: 2px solid #fdc91c
+			padding-top: 9px
+			padding-bottom: 10px
+		&__img
+			overflow: hidden
+			img
+				width: 772px
+			
+			
+	.advantages
+		.case
+			padding-left: 3px
+			padding-right: 3px
+		&_main
+			padding-top: 30px
+			padding-bottom: 0
+			.advantages
+				&__title
+					br
+						display: none
+					
+				&__item
+					margin-bottom: 25px
+					min-height: 200px
+					padding-left: 12px
+					padding-right: 12px
+					
+			.row
+				margin-left: 0
+				margin-right: 0
+
+	.categories
+		&__desc
+			display: none
+		&__item
+			height: 140px
+			&_wide
+				.categories
+					&__title
+						font-size: 21px
+						line-height: 23px
+						
+		&__title
+			font-size: 16px
+			line-height: 20px
+			
+	.leaders
+		&_main
+			padding-bottom: 90px
+
+		&__nav
+			position: relative
+		&__list
+			margin-right: -10px
+			
+		&__status
+			display: none
+		&__arrows
+			top: 0
+			right: 0
+			position: absolute
+		&__link
+			z-index: 1
+			position: absolute
+			top: 425px
+
+		&__item
+			.product
+				width: 200px
+			
+	.novelties
+		margin-top: 0
+		margin-bottom: 19px
+		.case
+			
+	.cards
+		.case
+			padding-left: 0
+			padding-right: 0
+
+	.card
+		margin-bottom: 19px
+		&_gift
+			.card
+				&__btn
+					width: 180px
+		&__title
+			font-size: 20px
+			line-height: 24px
+		&__wrap
+			height: auto
+			padding: 27px 15px 25px 15px
+		&__text
+			p
+				display: inline
+			
+		&__btn
+			height: 37px
+			line-height: 37px
+			font-size: 13px
+
+		&__steps
+			width: 280px
+
+		&__desc
+			padding: 12px 10px
+			.icon
+				margin-right: 6px
+			
+	.card_sms
+		.combined
+			&__btn
+				width: 110px
+				height: 37px
+				line-height: 37px
+				margin-left: 0
+				display: block
+				font-size: 13px
+			&__input
+				margin-bottom: 14px
+	
+	.cards
+		display: none
+
+	.card
+		&__step
+			position: relative
+			width: 280px
+			
+		&__combined-text
+			display: block
+			margin-bottom: 7px
+			
+		.card__btn-reset
+			position: absolute
+			top: 28px
+			left: 170px
+	.card__step-ok
+		position: relative
+		svg
+			top: 3px
+			left: 0
+			position: absolute
+		p
+			line-height: normal
+			margin-left: 15px
+			width: calc(100% - 30px)
+			span
+				// display: block
+
+	.recipe
+		&__data
+			padding-left: 0
+			padding-bottom: 27px
+			
+	
+	.reviews
+		margin-bottom: 40px
+		&__item
+			// padding-top: 0
+			// padding-bottom: 0
+			text-align: center
+			&:before
+				display: none
+				
+		&__logo
+			width: 90px
+			line-height: 75px
+			margin-left: 0
+			img
+				max-width: 80px
+				max-height: 75px
+		&__data
+			margin-left: 10px
+			text-align: left
+			width: 198px
+
+
+		&__title
+			font-size: 17px
+		&__desc
+			font-size: 10px
+			
+		&__text
+			text-align: left
+			margin-left: auto
+			margin-right: auto
+			margin-top: 23px
+			top: 50%
+			left: 0
+			right: 0
+			width: 100%
+			height: 50%
+			max-width: 100%
+			padding: 22px 22px 10px
+			background: linear-gradient(to bottom, rgba(0, 0, 0, .05) 0%, rgba(255, 255, 255, 0) 20%)
+
+		.slick-arrow
+			display: none
+			
+	.brands
+		&__title
+			span
+				&:before, &:after
+					width: 42px
+				&:before
+					margin-right: 25px
+				&:after
+					margin-left: 25px
+			
+		&__list
+			padding-left: 40px
+			padding-right: 40px
+
+
+
+	.footer
+		padding-top: 30px
+		&__links
+			li
+				display: block
+				margin-left: 0
+		&__copy, &__links
+			margin-bottom: 15px
+			
+		&__links
+			li
+				margin-bottom: 4px
+				&:last-of-type
+					margin-bottom: 0
+			a
+				display: inline
+			
+			
+
 
 
 @media screen and (max-width: 767px)
-	.container
+	.case
 		width: 100%
+	.header
+		&__logo
+			img
+				margin-left: 0
+
+	.novelties
+		.case
+			padding-left: 0
+			padding-right: 0
+		&__title
+			font-size: 24px
+			
+
+@media screen and (max-width: 370px)
+	.reviews
+		.slick-next
+			display: none !important
+
+		&__data
+			width: auto
+			

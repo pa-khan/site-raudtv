@@ -1,0 +1,29 @@
+@mixin grid-system($count, $prefix)
+  .col-
+    &#{$prefix}
+      @if $count == 24
+        &-#{$count}
+          width: 100%
+      @else
+        &-#{$count}
+          width: 4.166666666666667% * $count
+
+
+$i: 1
+@while $i < 25
+  @include grid-system($i, 'a')
+  $i: $i + 1
+
+
+@media screen and (max-width: 1230px)
+  $i: 1
+  @while $i < 25
+    @include grid-system($i, 'b')
+    $i: $i + 1
+
+@media screen and (max-width: 1020px)
+  $i: 1
+  @while $i < 25
+    @include grid-system($i, 'c')
+    $i: $i + 1
+

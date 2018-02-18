@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="template/styles/css/style.css" />
+	<link rel="stylesheet" href="template/styles/css/responsive.css" />
+	<script src="template/scripts/libs.js"></script>
+	<script src="template/scripts/common.js"></script>
+	<!--[if lt IE 9]>
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('main');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+	</script>
+	<![endif]-->
+</head>
+<body>
+	<div class="panel">
+		<div class="case">
+			<div class="row">
+				<div class="col col-a-13">
+					<div class="panel__nav">
+						<ul>
+							<li><a href="">О компании</a></li>
+							<li><a href="">Покупателям</a></li>
+							<li><a href="">HoReCa</a></li>
+							<li><a href="">Доставка и оплата</a></li>
+							<li><a href="">Новости</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col col-a-11">
+					<div class="panel__contacts">
+						<ul>
+							<li><a href="tel:+74232060160"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" class="icon icon-phone"><title>phone</title><path d="M3.3,3.82c.78-.78,1.46-1.26.08-3S1.08.44.32,1.2s0,4.11,3.16,7.32,6.45,4,7.32,3.16,2.07-1.67.36-3.05-2.2-.7-3,.08c-.54.54-1.92-.59-3.11-1.78S2.76,4.36,3.3,3.82Z" transform="translate(0 0)" style="fill:#fdc203"/></svg><span>+7 423 206 01 60</span></a></li>
+							<li><a href="tel:+79089940440"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15.06" class="icon icon-whatsapp"><title>whatsapp</title><path d="M15,7.31A7.38,7.38,0,0,1,4.08,13.7L0,15l1.33-3.92A7.23,7.23,0,0,1,.27,7.31,7.36,7.36,0,1,1,15,7.31M7.64,1.16A6.17,6.17,0,0,0,1.45,7.31h0a6.08,6.08,0,0,0,1.18,3.6l-.77,2.28,2.38-.76a6.2,6.2,0,0,0,9.6-5.13,6.17,6.17,0,0,0-6.2-6.14h0M11.35,9c0-.07-.17-.12-.35-.21S9.94,8.26,9.78,8.2s-.29-.09-.41.09-.47.58-.57.7-.21.13-.39,0A4.94,4.94,0,0,1,7,8.15,5.4,5.4,0,0,1,6,6.91c-.11-.18,0-.28.08-.37l.27-.31a1.2,1.2,0,0,0,.18-.3.33.33,0,0,0,0-.31c0-.09-.41-1-.56-1.33A.42.42,0,0,0,5.5,4H5.16a.67.67,0,0,0-.48.22A2,2,0,0,0,4,5.69a3.47,3.47,0,0,0,.74,1.85,7.38,7.38,0,0,0,3.08,2.7c1.84.72,1.84.48,2.17.45a1.83,1.83,0,0,0,1.22-.85A1.49,1.49,0,0,0,11.35,9" transform="translate(0 0.06)" style="fill:#fcc103"/></svg><span>+7 908 994 04 40</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<header class="header">
+		<div class="case">
+			<div class="row">
+				<div class="col col-a-5">
+					<div class="header__logo"><a href=""><img src="upload/logo.jpg" alt=""></a></div>
+				</div>
+				<div class="col col-a-9">
+					<div class="header__search search">
+						<div class="search__input input input_default"><input type="text" placeholder="Поиск по 90 000 товаров"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" class="search__icon icon icon-search"><title>search</title><path d="M14.88,12.6,11.57,9.25a6.12,6.12,0,0,0,.82-3,6.19,6.19,0,1,0-6.19,6.21,6.1,6.1,0,0,0,3.13-.87l3.3,3.34a.41.41,0,0,0,.29.12.4.4,0,0,0,.29-.12l1.69-1.71A.4.4,0,0,0,14.88,12.6ZM6.19,2.42A3.79,3.79,0,1,1,2.41,6.21,3.79,3.79,0,0,1,6.19,2.42Z" style="fill:#353435"/></svg></div>
+						<div class="search__example">например: <span>колбаски для жарки</span></div>
+					</div>
+				</div>
+				<div class="col col-a-6">
+					<div class="header__data">
+						<div class="header__total-price">3 550 руб.</div>
+						<div class="header__cart">
+							<div class="header__cart-wrap">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.79 21"  class="header__cart-icon icon icon-cart"><title>cart</title><path d="M0,6.78H7.76a.79.79,0,0,0,.63-.25q3-3.07,6.11-6.12A1.17,1.17,0,0,1,16.3,1.9a3.1,3.1,0,0,1-.22.24C14,4.26,11.83,6.37,9.72,8.5a1.75,1.75,0,0,1-1.44.61H3.52L5.1,18.66H18.62l1.59-9.55H13.12V6.78H23.79V9.1H22.58c-.14.88-1.35,8.13-1.81,10.9a1.16,1.16,0,0,1-1.16,1H4.13a1.21,1.21,0,0,1-.28,0,1.22,1.22,0,0,1-.93-1.14C2.69,18.38,1.29,10,1.14,9.1H0Z" style="fill:#1d1e1c"/></svg>
+								<span class="header__cart-count">5</span>
+							</div>
+							<div class="drop-items">
+								<div class="drop-items__list">
+									<div class="drop-items__item">
+										<div class="drop-items__remove"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon-close"><title>close</title><polygon points="16 1.69 14.31 0 8 6.31 1.69 0 0 1.69 6.31 8 0 14.31 1.69 16 8 9.69 14.31 16 16 14.31 9.69 8 16 1.69" style="fill:#010101"/></svg></div>
+										<div class="drop-items__title"><a href="">Лопатка свиная Мираторг бескостная охлажденная, 850г</a></div>
+										<div class="drop-items__counts"><span class="drop-items__quantity">1 шт.</span>x<span class="drop-items__price"><span>212</span> руб.</span></div>
+									</div>
+									<div class="drop-items__item">
+										<div class="drop-items__remove"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon-close"><title>close</title><polygon points="16 1.69 14.31 0 8 6.31 1.69 0 0 1.69 6.31 8 0 14.31 1.69 16 8 9.69 14.31 16 16 14.31 9.69 8 16 1.69" style="fill:#010101"/></svg></div>
+										<div class="drop-items__title"><a href="">Лопатка свиная Мираторг бескостная охлажденная, 850г</a></div>
+										<div class="drop-items__counts"><span class="drop-items__quantity">1 шт.</span>x<span class="drop-items__price"><span>212</span> руб.</span></div>
+									</div>
+									<div class="drop-items__item">
+										<div class="drop-items__remove"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon-close"><title>close</title><polygon points="16 1.69 14.31 0 8 6.31 1.69 0 0 1.69 6.31 8 0 14.31 1.69 16 8 9.69 14.31 16 16 14.31 9.69 8 16 1.69" style="fill:#010101"/></svg></div>
+										<div class="drop-items__title"><a href="">Лопатка свиная Мираторг бескостная охлажденная, 850г</a></div>
+										<div class="drop-items__counts"><span class="drop-items__quantity">1 шт.</span>x<span class="drop-items__price"><span>212</span> руб.</span></div>
+									</div>
+									<div class="drop-items__item">
+										<div class="drop-items__remove"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon-close"><title>close</title><polygon points="16 1.69 14.31 0 8 6.31 1.69 0 0 1.69 6.31 8 0 14.31 1.69 16 8 9.69 14.31 16 16 14.31 9.69 8 16 1.69" style="fill:#010101"/></svg></div>
+										<div class="drop-items__title"><a href="">Лопатка свиная Мираторг бескостная охлажденная, 850г</a></div>
+										<div class="drop-items__counts"><span class="drop-items__quantity">1 шт.</span>x<span class="drop-items__price"><span>212</span> руб.</span></div>
+									</div>
+									<div class="drop-items__item">
+										<div class="drop-items__remove"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon-close"><title>close</title><polygon points="16 1.69 14.31 0 8 6.31 1.69 0 0 1.69 6.31 8 0 14.31 1.69 16 8 9.69 14.31 16 16 14.31 9.69 8 16 1.69" style="fill:#010101"/></svg></div>
+										<div class="drop-items__title"><a href="">Лопатка свиная Мираторг бескостная охлажденная, 850г</a></div>
+										<div class="drop-items__counts"><span class="drop-items__quantity">1 шт.</span>x<span class="drop-items__price"><span>212</span> руб.</span></div>
+									</div>
+								</div>
+								<div class="drop-items__more"><span>и ещё 2 товара</span></div>
+								<div class="drop-items__foot">
+									<div class="drop-items__btn btn btn_bg-green btn_text-white btn_small btn_bold">оформить заказ</div>
+									<div class="drop-items__desc">Минимальный заказ – 1 000 руб</div>
+								</div>
+							</div>
+						</div>
+						<div class="header__favorit"><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 17.93" class="header__favorit-icon icon icon-love"><title>love</title><path d="M10,2.19A6.23,6.23,0,0,1,12.29.47a5.44,5.44,0,0,1,7.57,3.94,6.75,6.75,0,0,1-.76,4.68,18.08,18.08,0,0,1-3.33,4.25,36.94,36.94,0,0,1-5.6,4.51.23.23,0,0,1-.3,0,34.5,34.5,0,0,1-7-6A12.19,12.19,0,0,1,.44,8a6.05,6.05,0,0,1,.84-6A5,5,0,0,1,4.91,0,5.65,5.65,0,0,1,9.72,1.89l.27.28Zm0,3.36-.12-.21c-.23-.43-.44-.86-.68-1.28A4.21,4.21,0,0,0,5.6,1.72,3.42,3.42,0,0,0,2.66,3,4.37,4.37,0,0,0,2,7.38a10,10,0,0,0,2,3.19,32.2,32.2,0,0,0,5.89,5.26.21.21,0,0,0,.3,0c1.06-.84,2.16-1.66,3.19-2.54a20.51,20.51,0,0,0,3.53-3.8,6.74,6.74,0,0,0,1.38-3.16,4.31,4.31,0,0,0-.84-3.21,3.79,3.79,0,0,0-5.2-.66,4.88,4.88,0,0,0-1.48,1.71Z" transform="translate(0 0)" style="fill:#1d1d1b"/></svg></a></div>
+					</div>
+				</div>
+				<div class="col col-a-4">
+					<div class="header__auth">
+						<ul>
+							<li><a href="">Вход</a></li>
+							<li><a href="">Регистрация</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="nav">
+		<div class="case">
+			<div class="nav__item">
+				<a href="" class="nav__link">ДЕЛИКАТЕСЫ</a>
+			</div>
+			<div class="nav__item">
+				<a href="" class="nav__link">СОБСТВЕННОЕ ПРОИЗВОДСТВО</a>
+			</div>
+			<div class="nav__item">
+				<a href="" class="nav__link">СУПЕРМАРКЕТ</a>
+				<div class="nav__sub">
+					<div class="nav__subnav">
+						<ul>
+							<li><a href="">Мясо, охлажденное мясо, птица</a></li>
+							<li><a href="">Гриль меню </a></li>
+							<li><a href="">Рыба, морепродукты</a></li>
+							<li><a href="">Сыры, молочные продуты</a></li>
+							<li><a href="">Овощи, зелень, фрукты, ягоды</a></li>
+							<li><a href="">Овощная и фруктовая консервация</a></li>
+							<li><a href="">Сухие завтраки, каши, снэки</a></li>
+							<li><a href="">Кондитерские изделия</a></li>
+						</ul>
+					</div>
+					<div class="nav__subnav">
+						<ul>
+							<li><a href="">Соусы , специи, приправы</a></li>
+							<li><a href="">Уксусы, растительные масла</a></li>
+							<li><a href="">Соки, воды, напитки</a></li>
+							<li><a href="">Чай, кофе, какао</a></li>
+							<li><a href="">Макаронные изделия, крупа, все для выпечки</a></li>
+							<li><a href="">Подарки</a></li>
+							<li><a href="">Полуфабрикаты и  продукты быстрого приготовления</a></li>
+						</ul>
+					</div>
+					<div class="nav__product"></div>
+				</div>
+			</div>
+			<div class="nav__item">
+				<a href="" class="nav__link">BEAUTY МАРКЕТ</a>
+			</div>
+			<div class="nav__item">
+				<a href="" class="nav__link">BABY МАРКЕТ</a>
+			</div>
+			<div class="nav__item">
+				<a href="" class="nav__link">HOME МАРКЕТ</a>
+			</div>
+		</div>
+	</div>
+	<main class="main">
+		<div class="page">
+			<div class="case">
+				<div class="row">
+					<div class="col col-a-5">
+						<div class="category__aside">
+							<a href="" class="category__return return"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.97 12" class="icon icon-arrow-return"><title>arrow_back</title><path d="M2.54,6.74H16V5.26H2.54l4-4A.74.74,0,1,0,5.47.22L.22,5.47l-.09.11,0,.06,0,.07,0,.08,0,.06A.74.74,0,0,0,0,6H0a.73.73,0,0,0,0,.14l0,.06,0,.07,0,.07,0,.05.09.11,5.26,5.26a.74.74,0,1,0,1.05-1.05Z" style="fill:#010101"/></svg><span>Вернуться назад</span></a>
+							<div class="category__nav nav-block nav-block_item-bg">
+								<div class="nav-block__title">Рецепты</div>
+								<div class="nav-block__list">
+									<ul>
+										<li><a href="">Десерты</a></li>
+										<li><a href="">Консервация</a></li>
+										<li><a href="">Напитки</a></li>
+										<li><a href="">Салаты</a></li>
+										<li><a href="">Супы</a></li>
+										<li><a href="">Основные блюда</a></li>
+										<li><a href="">Горячие закуски</a></li>
+										<li><a href="">Холодные закуски</a></li>
+										<li><a href="">Выпечка</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col col-a-19">
+						<div class="breadcrumbs">
+							<ul>
+								<li><a href="">Главная</a></li>
+								<li><a href="">Рецепты</a></li>
+							</ul>
+						</div>
+						<div class="main-title">РЕЦЕПТЫ</div>
+						<div class="category__list">
+							<div class="row">
+								<div class="col col-a-12">
+									<a href="" class="recipe-cat">
+										<div class="recipe-cat__img" style="background-image: url('upload/receptes/1.png');"></div>
+										<div class="recipe-cat__data">
+											<div class="recipe-cat__title">ДЕСЕРТЫ</div>
+											<div class="recipe-cat__count"><span>29</span> рецептов</div>
+										</div>
+									</a>
+								</div>
+								<div class="col col-a-12">
+									<a href="" class="recipe-cat">
+										<div class="recipe-cat__img" style="background-image: url('upload/receptes/2.png');"></div>
+										<div class="recipe-cat__data">
+											<div class="recipe-cat__title">КОНСЕРВАЦИЯ</div>
+											<div class="recipe-cat__count"><span>44</span> рецептов</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col col-a-12">
+									<a href="" class="recipe-cat">
+										<div class="recipe-cat__img" style="background-image: url('upload/receptes/3.png');"></div>
+										<div class="recipe-cat__data">
+											<div class="recipe-cat__title">НАПИТКИ</div>
+											<div class="recipe-cat__count"><span>5</span> рецептов</div>
+										</div>
+									</a>
+								</div>
+								<div class="col col-a-12">
+									<a href="" class="recipe-cat">
+										<div class="recipe-cat__img" style="background-image: url('upload/receptes/4.png');"></div>
+										<div class="recipe-cat__data">
+											<div class="recipe-cat__title">САЛАТЫ</div>
+											<div class="recipe-cat__count"><span>23</span> рецептов</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col col-a-12">
+									<a href="" class="recipe-cat">
+										<div class="recipe-cat__img" style="background-image: url('upload/receptes/5.png');"></div>
+										<div class="recipe-cat__data">
+											<div class="recipe-cat__title">СУПЫ</div>
+											<div class="recipe-cat__count"><span>5</span> рецептов</div>
+										</div>
+									</a>
+								</div>
+								<div class="col col-a-12">
+									<a href="" class="recipe-cat">
+										<div class="recipe-cat__img" style="background-image: url('upload/receptes/6.png');"></div>
+										<div class="recipe-cat__data">
+											<div class="recipe-cat__title">ОСНОВНЫЕ БЛЮДА</div>
+											<div class="recipe-cat__count"><span>23</span> рецептов</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col col-a-12">
+									<a href="" class="recipe-cat">
+										<div class="recipe-cat__img" style="background-image: url('upload/receptes/7.png');"></div>
+										<div class="recipe-cat__data">
+											<div class="recipe-cat__title">Горячие закуски</div>
+											<div class="recipe-cat__count"><span>5</span> рецептов</div>
+										</div>
+									</a>
+								</div>
+								<div class="col col-a-12">
+									<a href="" class="recipe-cat">
+										<div class="recipe-cat__img" style="background-image: url('upload/receptes/8.png');"></div>
+										<div class="recipe-cat__data">
+											<div class="recipe-cat__title">ХОЛОДНЫЕ ЗАКУСКИ</div>
+											<div class="recipe-cat__count"><span>23</span> рецептов</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col col-a-12">
+									<a href="" class="recipe-cat">
+										<div class="recipe-cat__img" style="background-image: url('upload/receptes/9.png');"></div>
+										<div class="recipe-cat__data">
+											<div class="recipe-cat__title">ВЫПЕЧКА</div>
+											<div class="recipe-cat__count"><span>5</span> рецептов</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="more more_bold">
+							<div class="more__head">Лучшие рецепты недели</div>
+							<div class="more__body">
+								<div class="row">
+									<div class="col col-a-12">
+										<div class="recipe-item">
+											<div class="recipe-item__img"><img src="upload/recipe/wide/1.png" alt=""></div>
+											<div class="recipe-item__content">
+												<div class="recipe-item__title"><a href="">Свинина с капустой и сливами</a></div>
+												<div class="recipe-item__text">
+													<div class="recipe-item__category">Категория: <a href="">Горячие блюда</a></div>
+													<div class="recipe-item__data">
+														<p>Сложность приготовления средняя.</p> 
+														<p>Блюдо на 4 персоны</p>
+													</div>
+													<div class="recipe-item__time">Среднее время: 2 часа</div>
+													<div class="recipe-item__counts">
+														<div class="recipe-item__count"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 12" class="icon icon-look"><title>look</title><path d="M8,4A2,2,0,0,1,6,6,2,2,0,1,0,8,4ZM8,0C3.9,0,0,4.65,0,6s3.9,6,8,6,8-4.65,8-6S12.1,0,8,0ZM8,10a4,4,0,1,1,4-4A4,4,0,0,1,8,10Z"/></svg><span>150</span></div>
+														<div class="recipe-item__count"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 13.45" class="icon icon-like"><title>like</title><path d="M7.5,1.66A4.67,4.67,0,0,1,9.22.37a4.08,4.08,0,0,1,5.68,3,5.06,5.06,0,0,1-.57,3.51A13.56,13.56,0,0,1,11.83,10a27.71,27.71,0,0,1-4.2,3.38.17.17,0,0,1-.23,0,25.88,25.88,0,0,1-5.25-4.5A9.14,9.14,0,0,1,.33,6,4.54,4.54,0,0,1,1,1.52,3.75,3.75,0,0,1,3.69,0,4.24,4.24,0,0,1,7.29,1.44l.2.21Zm0,2.52L7.41,4c-.17-.32-.33-.65-.51-1A3.16,3.16,0,0,0,4.2,1.31,2.57,2.57,0,0,0,2,2.27a3.28,3.28,0,0,0-.5,3.29A7.5,7.5,0,0,0,3,8,24.16,24.16,0,0,0,7.42,11.9a.16.16,0,0,0,.22,0h0c.8-.63,1.62-1.25,2.39-1.91a15.39,15.39,0,0,0,2.65-2.85,5.06,5.06,0,0,0,1-2.37,3.23,3.23,0,0,0-.63-2.41,2.84,2.84,0,0,0-3.9-.5A3.66,3.66,0,0,0,8.08,3.15Z" transform="translate(0 0)" style="fill:#070808"/></svg><span>29</span></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col col-a-12">
+										<div class="recipe-item">
+											<div class="recipe-item__img"><img src="upload/recipe/wide/2.png" alt=""></div>
+											<div class="recipe-item__content">
+												<div class="recipe-item__title"><a href="">Тыквенный суп</a></div>
+												<div class="recipe-item__text">
+													<div class="recipe-item__category">Категория: <a href="">Супы</a></div>
+													<div class="recipe-item__data">
+														<p>Сложность приготовления средняя.</p> 
+														<p>Блюдо на 4 персоны</p>
+													</div>
+													<div class="recipe-item__time">Среднее время: 1 час</div>
+													<div class="recipe-item__counts">
+														<div class="recipe-item__count"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 12" class="icon icon-look"><title>look</title><path d="M8,4A2,2,0,0,1,6,6,2,2,0,1,0,8,4ZM8,0C3.9,0,0,4.65,0,6s3.9,6,8,6,8-4.65,8-6S12.1,0,8,0ZM8,10a4,4,0,1,1,4-4A4,4,0,0,1,8,10Z"/></svg><span>124</span></div>
+														<div class="recipe-item__count"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 13.45" class="icon icon-like"><title>like</title><path d="M7.5,1.66A4.67,4.67,0,0,1,9.22.37a4.08,4.08,0,0,1,5.68,3,5.06,5.06,0,0,1-.57,3.51A13.56,13.56,0,0,1,11.83,10a27.71,27.71,0,0,1-4.2,3.38.17.17,0,0,1-.23,0,25.88,25.88,0,0,1-5.25-4.5A9.14,9.14,0,0,1,.33,6,4.54,4.54,0,0,1,1,1.52,3.75,3.75,0,0,1,3.69,0,4.24,4.24,0,0,1,7.29,1.44l.2.21Zm0,2.52L7.41,4c-.17-.32-.33-.65-.51-1A3.16,3.16,0,0,0,4.2,1.31,2.57,2.57,0,0,0,2,2.27a3.28,3.28,0,0,0-.5,3.29A7.5,7.5,0,0,0,3,8,24.16,24.16,0,0,0,7.42,11.9a.16.16,0,0,0,.22,0h0c.8-.63,1.62-1.25,2.39-1.91a15.39,15.39,0,0,0,2.65-2.85,5.06,5.06,0,0,0,1-2.37,3.23,3.23,0,0,0-.63-2.41,2.84,2.84,0,0,0-3.9-.5A3.66,3.66,0,0,0,8.08,3.15Z" transform="translate(0 0)" style="fill:#070808"/></svg><span>56</span></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col col-a-12">
+										<div class="recipe-item">
+											<div class="recipe-item__img"><img src="upload/recipe/wide/3.png" alt=""></div>
+											<div class="recipe-item__content">
+												<div class="recipe-item__title"><a href="">Свинина с капустой и сливами</a></div>
+												<div class="recipe-item__text">
+													<div class="recipe-item__category">Категория: <a href="">Горячие блюда</a></div>
+													<div class="recipe-item__data">
+														<p>Сложность приготовления средняя.</p> 
+														<p>Блюдо на 4 персоны</p>
+													</div>
+													<div class="recipe-item__time">Среднее время: 2 часа</div>
+													<div class="recipe-item__counts">
+														<div class="recipe-item__count"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 12" class="icon icon-look"><title>look</title><path d="M8,4A2,2,0,0,1,6,6,2,2,0,1,0,8,4ZM8,0C3.9,0,0,4.65,0,6s3.9,6,8,6,8-4.65,8-6S12.1,0,8,0ZM8,10a4,4,0,1,1,4-4A4,4,0,0,1,8,10Z"/></svg><span>150</span></div>
+														<div class="recipe-item__count"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 13.45" class="icon icon-like"><title>like</title><path d="M7.5,1.66A4.67,4.67,0,0,1,9.22.37a4.08,4.08,0,0,1,5.68,3,5.06,5.06,0,0,1-.57,3.51A13.56,13.56,0,0,1,11.83,10a27.71,27.71,0,0,1-4.2,3.38.17.17,0,0,1-.23,0,25.88,25.88,0,0,1-5.25-4.5A9.14,9.14,0,0,1,.33,6,4.54,4.54,0,0,1,1,1.52,3.75,3.75,0,0,1,3.69,0,4.24,4.24,0,0,1,7.29,1.44l.2.21Zm0,2.52L7.41,4c-.17-.32-.33-.65-.51-1A3.16,3.16,0,0,0,4.2,1.31,2.57,2.57,0,0,0,2,2.27a3.28,3.28,0,0,0-.5,3.29A7.5,7.5,0,0,0,3,8,24.16,24.16,0,0,0,7.42,11.9a.16.16,0,0,0,.22,0h0c.8-.63,1.62-1.25,2.39-1.91a15.39,15.39,0,0,0,2.65-2.85,5.06,5.06,0,0,0,1-2.37,3.23,3.23,0,0,0-.63-2.41,2.84,2.84,0,0,0-3.9-.5A3.66,3.66,0,0,0,8.08,3.15Z" transform="translate(0 0)" style="fill:#070808"/></svg><span>29</span></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col col-a-12">
+										<div class="recipe-item">
+											<div class="recipe-item__img"><img src="upload/recipe/wide/4.png" alt=""></div>
+											<div class="recipe-item__content">
+												<div class="recipe-item__title"><a href="">Тыквенный суп</a></div>
+												<div class="recipe-item__text">
+													<div class="recipe-item__category">Категория: <a href="">Супы</a></div>
+													<div class="recipe-item__data">
+														<p>Сложность приготовления средняя.</p> 
+														<p>Блюдо на 4 персоны</p>
+													</div>
+													<div class="recipe-item__time">Среднее время: 1 час</div>
+													<div class="recipe-item__counts">
+														<div class="recipe-item__count"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 12" class="icon icon-look"><title>look</title><path d="M8,4A2,2,0,0,1,6,6,2,2,0,1,0,8,4ZM8,0C3.9,0,0,4.65,0,6s3.9,6,8,6,8-4.65,8-6S12.1,0,8,0ZM8,10a4,4,0,1,1,4-4A4,4,0,0,1,8,10Z"/></svg><span>124</span></div>
+														<div class="recipe-item__count"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 13.45" class="icon icon-like"><title>like</title><path d="M7.5,1.66A4.67,4.67,0,0,1,9.22.37a4.08,4.08,0,0,1,5.68,3,5.06,5.06,0,0,1-.57,3.51A13.56,13.56,0,0,1,11.83,10a27.71,27.71,0,0,1-4.2,3.38.17.17,0,0,1-.23,0,25.88,25.88,0,0,1-5.25-4.5A9.14,9.14,0,0,1,.33,6,4.54,4.54,0,0,1,1,1.52,3.75,3.75,0,0,1,3.69,0,4.24,4.24,0,0,1,7.29,1.44l.2.21Zm0,2.52L7.41,4c-.17-.32-.33-.65-.51-1A3.16,3.16,0,0,0,4.2,1.31,2.57,2.57,0,0,0,2,2.27a3.28,3.28,0,0,0-.5,3.29A7.5,7.5,0,0,0,3,8,24.16,24.16,0,0,0,7.42,11.9a.16.16,0,0,0,.22,0h0c.8-.63,1.62-1.25,2.39-1.91a15.39,15.39,0,0,0,2.65-2.85,5.06,5.06,0,0,0,1-2.37,3.23,3.23,0,0,0-.63-2.41,2.84,2.84,0,0,0-3.9-.5A3.66,3.66,0,0,0,8.08,3.15Z" transform="translate(0 0)" style="fill:#070808"/></svg><span>56</span></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="more__foot"><a href="" class="more__btn btn btn_border-yellow btn_btn-text-black btn_small btn_bold">смотреть все</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="case">
+				<div class="row">
+					<div class="col col-a-5 hidden-c">
+						<div class="footer__title">О КОМПАНИИ</div>
+						<div class="footer__nav">
+							<ul>
+								<li><a href="">Профиль</a></li>
+								<li><a href="">История</a></li>
+								<li><a href="">Контакты</a></li>
+								<li><a href="">Вакансии</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col col-a-5 hidden-c">
+						<div class="footer__title">ПОКУПАТЕЛЯМ</div>
+						<div class="footer__nav">
+							<ul>
+								<li><a href="">Как заказать</a></li>
+								<li><a href="">Доставка и оплата</a></li>
+								<li><a href="">Возврат</a></li>
+								<li><a href="">Вопросы и ответы</a></li>
+								<li><a href="">Рецепты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col col-a-6 hidden-c">
+						<div class="footer__title">HoReCa</div>
+						<div class="footer__nav">
+							<ul>
+								<li><a href="">Преимущества</a></li>
+								<li><a href="">Наши клиенты</a></li>
+								<li><a href="">Контакты</a></li>
+								<li><a href="">Реквизиты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col col-a-8 col-c-24">
+						<div class="footer__phones">
+							<div class="footer__phone"><a href="tel:+74232060160">+7 423 206 01 60</a></div>
+							<div class="footer__phone footer__phone_small"><a href="tel:+79089940440">+7 908 994 04 40</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" class="icon icon-whatapp-black"><title>whatsapp</title><path d="M15,7.31A7.38,7.38,0,0,1,4.08,13.7L0,15l1.33-3.92A7.23,7.23,0,0,1,.27,7.31,7.36,7.36,0,0,1,15,7.31M7.64,1.16A6.17,6.17,0,0,0,1.45,7.31a6.08,6.08,0,0,0,1.18,3.6l-.77,2.28,2.38-.76a6.2,6.2,0,0,0,9.6-5.13A6.17,6.17,0,0,0,7.64,1.16M11.35,9c0-.07-.17-.12-.35-.21S9.94,8.26,9.78,8.2s-.29-.09-.41.09-.47.58-.57.7-.21.13-.39,0A4.94,4.94,0,0,1,7,8.15,5.4,5.4,0,0,1,6,6.91c-.11-.18,0-.28.08-.37s.18-.21.27-.31a1.2,1.2,0,0,0,.18-.3.33.33,0,0,0,0-.31c0-.09-.41-1-.56-1.33S5.61,4,5.5,4L5.16,4a.67.67,0,0,0-.48.22A2,2,0,0,0,4,5.69a3.47,3.47,0,0,0,.74,1.85,7.38,7.38,0,0,0,3.08,2.7c1.84.72,1.84.48,2.17.45a1.83,1.83,0,0,0,1.22-.85A1.49,1.49,0,0,0,11.35,9" style="fill:#010101"/></svg></div>
+						</div>
+						<div class="footer__mode">Ежедневно с 10 до 20 вы можете оформить заказ по телефону или получить ответы на любые интересующие вас вопросы.</div>
+						<div class="footer__email"><a href="">info@rautdv.ru</a></div>
+						<div class="footer__socials">
+							<div class="footer__socials-title"><span>РаутМаркет</span> в соц.сетях</div>
+							<div class="footer__socials-list socials">
+								<ul>
+									<li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.91 27.91"><title>facebook</title><path d="M12.08,21.54h3.14V14h2.09l.28-2.62H15.21V10c0-.68.07-1,1-1h1.31V6.36H15.48c-2.51,0-3.4,1.27-3.4,3.4v1.57H10.51V14h1.57ZM.09,0H28V27.91H.09Z" transform="translate(-0.09)" style="fill:#3b599d"/></svg></a></li>
+									<li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"><title>vk</title><path d="M0,0V28H28V0ZM20.72,18.84H19.1c-.54,0-.54,0-1.08-.54-.69-.69-1.61-1.61-2.15-1.61a1.16,1.16,0,0,0-1.08,1.08c0,.3,0,1.08-.54,1.08s-.27,0-.54,0c-1,0-2.3-.15-4.18-2.1a17.34,17.34,0,0,1-3.89-6.51c-.07-.17,0-.52.54-.52l1.61,0c.54,0,.65-.1,1.08.54C10,11.84,11,14,11.57,14s.54-2.15.54-2.15V10.77c0-.76-.92-.52-1.08-.54s.54-.54.54-.54a3.13,3.13,0,0,1,1.61-.54H14.8c.8.19.54,1.45.54,3.23,0,.57,0,1.61.54,1.61s.54-.54,1.08-1.61a20.12,20.12,0,0,1,1.61-2.69c.33-.49,3.09,0,3.2.36s-.6,1.54-1.59,2.86c-1.63,2.17-1.08,1.61,0,2.69,1.25,1.25,1.61,1.82,1.61,2.15A1.09,1.09,0,0,1,20.72,18.84Z" style="fill:#0578aa"/></svg></a></li>
+									<li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"><title>odnoklasniki</title><path d="M14,11.73A1.77,1.77,0,1,0,12.23,10,1.79,1.79,0,0,0,14,11.73Z" style="fill:#f07f35"/><path d="M0,0V28H28V0ZM14,6.43A3.53,3.53,0,1,1,10.47,10,3.51,3.51,0,0,1,14,6.43Zm4,9.44c-.61.35-2.52,1.16-2.52,1.16l2.12,2.72a1.93,1.93,0,0,1,.4.81,1,1,0,0,1-1,1,1,1,0,0,1-.76-.35L14,18.54l-2.32,2.67a1,1,0,0,1-.76.35,1,1,0,0,1-1-1,1.63,1.63,0,0,1,.4-.81L12.49,17s-1.92-.81-2.52-1.16a.92.92,0,0,1-.5-.86,1,1,0,0,1,1-1C11,14,12,15,14,15s3-1,3.53-1a1,1,0,0,1,1,1A1,1,0,0,1,18,15.87Z" style="fill:#f07f35"/></svg></a></li>
+									<li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"><title>instagram</title><path d="M17.38,7.44H10.69a3.3,3.3,0,0,0-2.37.84,3.24,3.24,0,0,0-.88,2.37v6.65a3.26,3.26,0,0,0,.88,2.4,3.36,3.36,0,0,0,2.37.84h6.62a3.36,3.36,0,0,0,2.37-.84,3.17,3.17,0,0,0,.94-2.37V10.66a3.35,3.35,0,0,0-.88-2.34A3.24,3.24,0,0,0,17.38,7.44ZM14,18.12a4.15,4.15,0,0,1,0-8.31,4.15,4.15,0,0,1,0,8.31Zm4.32-7.47a.94.94,0,1,1,.94-.94A.94.94,0,0,1,18.32,10.66Z" style="fill:#3a5ba7"/><path d="M14,11.31A2.66,2.66,0,1,0,16.66,14,2.67,2.67,0,0,0,14,11.31Z" style="fill:#3a5ba7"/><path d="M0,0V28H28V0ZM22,17.34a4.65,4.65,0,0,1-1.33,3.44A4.79,4.79,0,0,1,17.31,22H10.69a4.74,4.74,0,0,1-3.38-1.27A4.67,4.67,0,0,1,6,17.31V10.66A4.45,4.45,0,0,1,10.66,6h6.69A4.5,4.5,0,0,1,22,10.66Z" style="fill:#3a5ba7"/></svg></a></li>
+									<li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"><title>youtube</title><polygon points="12.57 16.14 16.96 13.61 12.57 11.08 12.57 16.14" style="fill:#e6342a"/><path d="M0,0V28H28V0ZM21.64,17.74a2,2,0,0,1-1.71,1.56,53.16,53.16,0,0,1-5.93.22,53.16,53.16,0,0,1-5.93-.22,2,2,0,0,1-1.71-1.56A17,17,0,0,1,6.09,14a17,17,0,0,1,.28-3.74A2,2,0,0,1,8.08,8.7,53.15,53.15,0,0,1,14,8.48a53.14,53.14,0,0,1,5.93.22,2,2,0,0,1,1.71,1.56A17,17,0,0,1,21.91,14,17,17,0,0,1,21.64,17.74Z" style="fill:#e6342a"/></svg></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="case">
+				<div class="row">
+					<div class="col col-a-4 col-b-5 col-c-24">
+						<div class="footer__copy">© ООО «РаутМаркет», 2017</div>
+					</div>
+					<div class="col col-a-12 col-b-14 col-c-24">
+						<div class="footer__links">
+							<ul>
+								<li><a href="">Юридическая информация</a></li>
+								<li><a href="">Политика обработки персональных данных</a></li>
+								<li><a href="">Обратная связь</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col col-a-8 col-b-5 col-c-24">
+						<div class="footer__dev"><a href="" target="_blank">Дизайн сайта - <span>студия Кефирок</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="popups">
+		<div class="popup popup_auth" id="popup-auth">
+			<div class="popup__close" data-fancybox-close><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon-close"><title>close</title><polygon points="16 1.69 14.31 0 8 6.31 1.69 0 0 1.69 6.31 8 0 14.31 1.69 16 8 9.69 14.31 16 16 14.31 9.69 8 16 1.69" style="fill:#010101"/></svg></div>
+			<div class="popup__title">АВТОРИЗАЦИЯ</div>
+			<div class="popup__body">
+				<div class="popup__element element">
+					<div class="element__title">Электронная почта</div>
+					<div class="element__input input w100p"><input type="text"></div>
+					<div class="element__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" class="icon icon-cross-red"><title>delete_active</title><polygon points="10 1.05 8.95 0 5 3.95 1.05 0 0 1.05 3.95 5 0 8.95 1.05 10 5 6.05 8.95 10 10 8.95 6.05 5 10 1.05" style="fill:#e04141"/></svg></div>
+				</div>
+				<div class="popup__element element">
+					<div class="element__title">Пароль</div>
+					<div class="element__input input w100p"><input type="password"></div>
+					<div class="element__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" class="icon icon-cross-red"><title>delete_active</title><polygon points="10 1.05 8.95 0 5 3.95 1.05 0 0 1.05 3.95 5 0 8.95 1.05 10 5 6.05 8.95 10 10 8.95 6.05 5 10 1.05" style="fill:#e04141"/></svg></div>
+				</div>
+				<div class="popup__submit">
+					<button class="popup__btn btn btn_extra btn_bg-green btn_text-white inline-block btn_bold">войти</button>
+					<div class="popup__link inline-block"><a href="">Забыли пароль?</a></div>
+				</div>
+			</div>
+			<div class="popup__foot">
+				<div class="auth-soc">
+					<div class="auth-soc__title">Авторизация через соц.сети</div>
+					<div class="auth-soc__list">
+						<ul>
+							<li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" class="icon icon-auth-vk"><title>auth_vk</title><path d="M25.67,0H2.33A2.34,2.34,0,0,0,0,2.33V25.67A2.34,2.34,0,0,0,2.33,28H25.67A2.34,2.34,0,0,0,28,25.67V2.33A2.34,2.34,0,0,0,25.67,0ZM21,15.75c1.34,1.34,1.75,2,1.75,2.33a1.19,1.19,0,0,1-1.17,1.17H19.83c-.58,0-.58,0-1.17-.58-.76-.76-1.75-1.75-2.33-1.75a1.25,1.25,0,0,0-1.17,1.17c0,.35,0,1.17-.58,1.17H14c-1.17-.06-2.51-.17-4.55-2.28a19,19,0,0,1-4.2-7.06c-.06-.23,0-.58.58-.58H7.58c.58,0,.7-.12,1.17.58C9.92,11.67,11.08,14,11.67,14s.58-2.33.58-2.33V10.5c0-.82-1-.58-1.17-.58s.58-.58.58-.58a3.42,3.42,0,0,1,1.75-.58h1.75c.88.23.58,1.58.58,3.5,0,.64.06,1.75.58,1.75s.58-.58,1.17-1.75a18.73,18.73,0,0,1,1.75-2.92c.41-.53,3.38.06,3.5.41S22,11.38,21,12.83C19.25,15.17,19.83,14.58,21,15.75Z" style="fill:#55779c"></path></svg></a></li>
+							<li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" class="icon icon-auth-ok"><title>auth_ok</title><path d="M14,10.8a2.49,2.49,0,1,0-2.49-2.49A2.52,2.52,0,0,0,14,10.8Z" style="fill:#ee7317"></path><path d="M25.67,0H2.33A2.34,2.34,0,0,0,0,2.33V25.67A2.34,2.34,0,0,0,2.33,28H25.67A2.34,2.34,0,0,0,28,25.67V2.33A2.34,2.34,0,0,0,25.67,0ZM14,3.33a5,5,0,1,1-5,5A4.95,4.95,0,0,1,14,3.33Zm5.69,13.3c-.85.5-3.56,1.64-3.56,1.64l3,3.84a2.72,2.72,0,0,1,.57,1.14,1.43,1.43,0,0,1-1.42,1.42,1.35,1.35,0,0,1-1.07-.5L14,20.4l-3.27,3.77a1.35,1.35,0,0,1-1.07.5,1.43,1.43,0,0,1-1.42-1.42,2.3,2.3,0,0,1,.57-1.14l3.06-3.84s-2.7-1.14-3.56-1.64a1.29,1.29,0,0,1-.71-1.21A1.43,1.43,0,0,1,9,14c.71,0,2.13,1.42,5,1.42S18.27,14,19,14a1.43,1.43,0,0,1,1.42,1.42A1.38,1.38,0,0,1,19.69,16.63Z" style="fill:#ee7317"></path></svg></a></li>
+							<li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" class="icon icon-auth-fb"><title>auth_fb</title><path d="M0,25.67A2.33,2.33,0,0,0,2.33,28H25.67A2.33,2.33,0,0,0,28,25.67V2.33A2.33,2.33,0,0,0,25.67,0H2.33A2.33,2.33,0,0,0,0,2.33V25.67ZM14.58,24.5V15.17H12.25v-3.5h2.33c0-6,.26-6.42,7.58-6.42v3.5c-3.86,0-3.5.22-3.5,2.92h3.5v3.5h-3.5V24.5H14.58Z" style="fill:#3d5a9b"></path></svg></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="popup__desc"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" class="icon icon-cross-red"><title>delete_active</title><polygon points="10 1.05 8.95 0 5 3.95 1.05 0 0 1.05 3.95 5 0 8.95 1.05 10 5 6.05 8.95 10 10 8.95 6.05 5 10 1.05" style="fill:#e04141"/></svg><span>Неверная комбинация логина и пароля</span></div>
+		</div>
+		<div class="popup popup_recepe" id="popup-recepe">
+			<div class="popup__close" data-fancybox-close><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon-close"><title>close</title><polygon points="16 1.69 14.31 0 8 6.31 1.69 0 0 1.69 6.31 8 0 14.31 1.69 16 8 9.69 14.31 16 16 14.31 9.69 8 16 1.69" style="fill:#010101"/></svg></div>		
+			<div class="popup__head">
+				<div class="popup__title">ОТПРАВИТЬ НА ПОЧТУ</div>
+				<div class="popup__text">Введите почту. На указанный вами адрес электронной почты будет выслан данный рецепт.</div>
+			</div>
+			<div class="popup__body">
+				<div class="popup__input input"><input type="text" placeholder="Электронная почта"></div>
+				<div class="popup__policy">
+					<div class="checkbox">
+						<input type="checkbox">
+						<label>Даю своё согласие на обработку и хранение моих персональных данных</label>
+					</div>
+				</div>
+				<button class="popup__btn btn btn_extra btn_bg-green btn_text-white btn_bold">отправить</button>
+			</div>
+		</div>
+		<div class="popup popup_feedback" id="popup-feedback">
+			<div class="popup__close" data-fancybox-close><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon-close"><title>close</title><polygon points="16 1.69 14.31 0 8 6.31 1.69 0 0 1.69 6.31 8 0 14.31 1.69 16 8 9.69 14.31 16 16 14.31 9.69 8 16 1.69" style="fill:#010101"/></svg></div>
+			<div class="popup__title">ОБРАТНАЯ СВЯЗЬ</div>
+			<div class="popup__desc mid">Если у вас есть какой-то вопрос, задайте его через данную форму.</div>
+			<div class="popup__elements">
+				<div class="row">
+					<div class="col col-a-12">
+						<div class="popup__element element">
+							<div class="element__title">Электронная почта <span class="color-red">*</span></div>
+							<div class="element__input input w100p"><input type="text"></div>
+						</div>
+					</div>
+					<div class="col col-a-12">
+						<div class="popup__element element element_right">
+							<div class="element__title">Телефон</div>
+							<div class="element__input input input_tel w100p"><input type="text"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-a-24">
+						<div class="popup__element element">
+							<div class="element__title">Сообщение <span class="color-red">*</span></div>
+							<div class="element__area area w100p"><textarea></textarea></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="popup__submit">
+				<button class="popup__btn btn btn_extra btn_bg-green btn_text-white inline-block btn_bold">отправить</button>
+				<div class="popup__policy inline-block">
+					<div class="checkbox">
+						<input type="checkbox">
+						<label>Даю своё согласие на обработку и хранение моих персональных данных</label>
+					</div>
+				</div>
+			</div>
+			<div class="popup__required"><span class="color-red">*</span> - поля обязательные для заполнения</div>
+			<div class="contacts-block__wrap">
+				<div class="contacts-block__phone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" class="icon icon-phone"><title>phone</title><path d="M3.3,3.82c.78-.78,1.46-1.26.08-3S1.08.44.32,1.2s0,4.11,3.16,7.32,6.45,4,7.32,3.16,2.07-1.67.36-3.05-2.2-.7-3,.08c-.54.54-1.92-.59-3.11-1.78S2.76,4.36,3.3,3.82Z" transform="translate(0 0)" style="fill:#fdc203"></path></svg><a href="tel:+74232060160">+7 423 206 01 60</a></div>
+				<div class="contacts-block__whatsapp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15.06" class="icon icon-whatsapp"><title>whatsapp_yellow</title><path d="M15,7.31A7.38,7.38,0,0,1,4.08,13.7L0,15l1.33-3.92A7.23,7.23,0,0,1,.27,7.31,7.36,7.36,0,1,1,15,7.31M7.64,1.16A6.17,6.17,0,0,0,1.45,7.31h0a6.08,6.08,0,0,0,1.18,3.6l-.77,2.28,2.38-.76a6.2,6.2,0,0,0,9.6-5.13,6.17,6.17,0,0,0-6.2-6.14h0M11.35,9c0-.07-.17-.12-.35-.21S9.94,8.26,9.78,8.2s-.29-.09-.41.09-.47.58-.57.7-.21.13-.39,0A4.94,4.94,0,0,1,7,8.15,5.4,5.4,0,0,1,6,6.91c-.11-.18,0-.28.08-.37l.27-.31a1.2,1.2,0,0,0,.18-.3.33.33,0,0,0,0-.31c0-.09-.41-1-.56-1.33A.42.42,0,0,0,5.5,4H5.16a.67.67,0,0,0-.48.22A2,2,0,0,0,4,5.69a3.47,3.47,0,0,0,.74,1.85,7.38,7.38,0,0,0,3.08,2.7c1.84.72,1.84.48,2.17.45a1.83,1.83,0,0,0,1.22-.85A1.49,1.49,0,0,0,11.35,9" transform="translate(0 0.06)" style="fill:#fcc103"></path></svg><span>WhatsApp:</span><a href="tel:+79089940440">+7 908 994 0440</a></div>
+			</div>
+		</div>
+		<div class="popup popup_thanks">
+			<div class="popup__close" data-fancybox-close><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon-close"><title>close</title><polygon points="16 1.69 14.31 0 8 6.31 1.69 0 0 1.69 6.31 8 0 14.31 1.69 16 8 9.69 14.31 16 16 14.31 9.69 8 16 1.69" style="fill:#010101"/></svg></div>
+			<div class="popup__title">СООБЩЕНИЕ ОТПРАВЛЕНО</div>
+			<div class="popup__text">
+				<p>Ваше сообщение успешно отправлено.</p>
+				<p>В ближайшее время мы подготовим ответ.</p>
+			</div>
+		</div>
+		<div class="popup popup_policy" id="popup-policy">
+			<div class="popup__close" data-fancybox-close><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon icon-close"><title>close</title><polygon points="16 1.69 14.31 0 8 6.31 1.69 0 0 1.69 6.31 8 0 14.31 1.69 16 8 9.69 14.31 16 16 14.31 9.69 8 16 1.69" style="fill:#010101"/></svg></div>
+			<div class="popup__title">СООБЩЕНИЕ ОТПРАВЛЕНО</div>
+			<div class="popup__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos magni quaerat perspiciatis, neque iure, nobis odit facere pariatur laboriosam non tempora maiores itaque dicta rem nisi minus dolore repudiandae debitis, sint quam molestias nulla cumque fugiat. Recusandae laboriosam quam, eaque soluta facere consequatur corporis magnam suscipit est neque inventore minus quaerat accusantium distinctio nobis, officia labore. Reprehenderit et, quasi quod odio doloribus molestiae omnis nobis ratione! Vero consequuntur excepturi, possimus sit fugiat saepe sequi explicabo placeat iusto ducimus accusantium recusandae optio ut voluptates, ullam dolore enim soluta tenetur et porro qui. Vitae ipsa nesciunt commodi. Harum quam optio quibusdam, et ad nesciunt facilis unde illo vero magnam repudiandae quos placeat consectetur, aliquam omnis in enim officia soluta. Cupiditate possimus modi, fugit tempore labore saepe praesentium est nihil nisi eveniet dolorem dolor dolore aspernatur debitis odio, nulla a nesciunt suscipit. Rerum, aspernatur, officia. Cumque dignissimos quae deserunt voluptate consectetur quisquam, est iure labore dicta. Hic, maxime dolorum eligendi ex libero ipsam quam repellendus iste asperiores, amet molestias inventore nulla? Corporis distinctio repellendus optio harum corrupti quisquam adipisci, saepe soluta vitae, laudantium pariatur quidem illo nesciunt debitis, dicta deserunt voluptate facilis esse! Veritatis illo rerum consequatur, deleniti. Impedit dolorum, reiciendis aperiam nobis placeat sint dolorem? Consequatur consectetur soluta aspernatur, animi harum laboriosam iusto provident iste ea officiis sint consequuntur velit sed quidem doloribus voluptatibus magni corporis amet similique. Laboriosam magnam, odio dolorem non deserunt accusamus sequi dolores qui ipsum ipsam reiciendis ad debitis alias culpa doloremque voluptatibus voluptate minima, laborum, deleniti placeat ut perspiciatis voluptas animi! Eaque neque tenetur, quos quaerat similique recusandae temporibus porro iste eos, vero in quo perferendis non molestiae, quam! Minus, cum. Magnam, non quo, a ut magni, neque ducimus vel placeat odit facere quam ad sint nam commodi voluptatibus quisquam. Sapiente iste quae, accusamus, odio dolores, repellat nobis, ratione maxime perferendis soluta sed? Similique architecto dignissimos qui quod corrupti, sit illo officia exercitationem possimus minima doloremque aspernatur repellat repellendus quasi facilis perspiciatis eaque dolor consequatur nihil ab animi dolore hic quibusdam! Optio dolor deleniti quia veritatis, rerum cumque porro eveniet, animi repellat repudiandae! Placeat alias, tenetur mollitia voluptatibus laborum asperiores, ducimus sit dolores. Veniam mollitia vero reprehenderit natus, officiis saepe ea asperiores ducimus id sint minus ullam distinctio. Temporibus debitis ut quisquam, et, aliquid ducimus. Laborum aspernatur quaerat laboriosam quasi iure itaque obcaecati et officia, dolore excepturi molestiae architecto dolor, quae iusto impedit totam! Ea vero, laboriosam sit similique necessitatibus dolores perferendis, exercitationem numquam. At quibusdam adipisci, autem reprehenderit laboriosam! Laudantium explicabo, aperiam officiis dolores quas sint dignissimos maiores magnam illo, facere odit nihil. Accusamus aliquam eligendi quibusdam, eos vel sapiente! Est, porro ea. Excepturi, voluptates dolorem facere commodi sequi id unde cumque nemo recusandae. Placeat saepe totam et quod aperiam voluptas nisi eveniet. Deserunt explicabo a provident numquam error autem quasi, odio unde vel, esse perferendis exercitationem tempore ratione aperiam repudiandae eos reprehenderit. Nemo est, sint laborum impedit sequi pariatur ipsa dolorum saepe repellat numquam cupiditate optio earum, tempora iusto quas. Ipsum vitae quos soluta eaque cumque officia hic corporis voluptates autem sapiente excepturi officiis, dolores iste molestiae eveniet recusandae blanditiis laborum, itaque veritatis amet quaerat debitis earum a? Nulla doloribus omnis mollitia, culpa aliquam optio impedit nesciunt exercitationem quae fugiat voluptas possimus ipsam eligendi, repellat. Ex dolores assumenda possimus dolorum vel vero, eaque optio deleniti, commodi accusantium at beatae, sapiente debitis quam fugit quidem reiciendis repudiandae. Doloribus at inventore, laudantium aspernatur omnis incidunt nobis blanditiis asperiores fuga possimus? Labore voluptates ea esse aliquam, corrupti nisi et laborum dolor illum molestias id fugiat doloremque recusandae sint! Autem, voluptatem, velit. Voluptatum sint perspiciatis, quas esse fugit accusamus. Quisquam magni cupiditate quaerat, architecto assumenda dignissimos sapiente harum aspernatur. Quibusdam laudantium minus fugit sed omnis quidem tenetur veritatis iste! Quidem consequuntur provident saepe tempora rerum totam dolorum eius inventore repellendus nisi quia, sequi et quam repellat rem asperiores iste quae consectetur a cum, ex voluptatem. Corporis similique doloribus voluptatem earum ratione dolore ea repudiandae provident nobis mollitia eius suscipit vitae cupiditate reiciendis ipsa odio, sit velit laborum asperiores alias molestias error! Iste voluptate, consectetur totam sint quaerat incidunt odit fugit dolore eligendi, quasi ad porro ducimus repudiandae perferendis quis, error excepturi asperiores laudantium laboriosam enim recusandae architecto. Ipsam saepe incidunt sit fugit nobis amet, corrupti beatae dolor autem dolorum quibusdam inventore dolorem voluptate voluptas, nesciunt nulla magni ipsum eveniet deserunt ratione? Ullam deserunt adipisci temporibus perspiciatis accusamus velit odit quas magni laborum, ipsa aut consectetur rerum id nam expedita error nulla voluptatem! Veritatis voluptatum reprehenderit quia corporis, id nisi doloribus laudantium sunt cum veniam dignissimos distinctio iste, a! Ea possimus esse illum amet quaerat facilis, tempora, beatae obcaecati doloremque reiciendis consequuntur tenetur! Provident quaerat quidem porro error fuga cumque laudantium temporibus! Tempora repudiandae atque iste, debitis voluptates voluptatem nihil magnam veniam, rerum aspernatur in repellat numquam corporis? Quasi eos amet exercitationem quidem, odit velit enim consectetur. Vel nisi eligendi ullam sunt odio minima nihil, dicta optio aperiam enim est ipsa temporibus deleniti, omnis dignissimos ex voluptatum repudiandae molestiae assumenda. Placeat totam, excepturi, ipsum harum corporis necessitatibus similique quis sunt. Assumenda obcaecati, repellat voluptas! At odit natus minus veritatis laboriosam nulla, provident incidunt nihil libero. A, veniam dolorum corporis doloribus laboriosam. Omnis fugiat, voluptas dicta tempora molestias libero non quos quam vero esse at repudiandae quaerat molestiae, aspernatur veniam, cupiditate perspiciatis illo nostrum sunt, voluptatibus iste consectetur accusamus! Incidunt minima doloribus, quia id doloremque mollitia sapiente dolor quod voluptates, accusantium minus cupiditate similique soluta a voluptatem dolorum repellat, eveniet ducimus expedita? Magni corporis nobis voluptatem aliquam nostrum provident consectetur tempore asperiores, laborum cumque ipsa ea deserunt repellendus odit beatae numquam! Saepe sint animi quam, error harum corrupti ex omnis asperiores iure doloremque cumque beatae inventore, possimus ea qui, perspiciatis vitae adipisci sed minima minus amet! Iusto incidunt blanditiis nesciunt, ut ab. Repudiandae corporis eaque sit laborum, commodi tempore, quam aperiam expedita neque voluptatem delectus recusandae dolorem dolore. Commodi animi aspernatur saepe consequuntur fuga enim, dolore corporis quisquam ab optio quibusdam obcaecati tenetur aliquid, dignissimos vitae est. Doloribus quibusdam aliquam deserunt.</div>
+		</div>
+	</div>
+</body>
+</html>
