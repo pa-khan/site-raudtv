@@ -405,6 +405,8 @@ input, .slick-slide
 		margin-left: 17px
 		cursor: pointer
 		a
+			path
+				fill: #1d1d1b !important
 			&:hover
 				path
 					fill: #eb5b5b !important
@@ -448,6 +450,8 @@ path
 	padding-bottom: 28px
 	border-top: 1px solid #dddddd
 	border-bottom: 1px solid #dddddd
+	+ .cart-list__return-top
+		padding-top: 20px
 	&__btn
 		width: auto
 		padding-left: 30px
@@ -763,8 +767,9 @@ path
 			width: 0
 			background: #fbbd00
 		div.start
-			width: 100%
-			animation: bar 5s
+			animation: bar 5s 
+		div.stop
+			animation: stop 0 1
 	&__nav
 		.slick-slide
 			position: relative
@@ -811,6 +816,12 @@ path
 		width: 0
 	100%
 		width: 100%
+
+
+@keyframes stop
+	100%
+		width: 0
+
 
 
 
@@ -1030,7 +1041,7 @@ path
 		line-height: 18px
 		margin-bottom: 10px
 		padding: 0 25px
-		height: 38px
+		height: 56px
 		a
 			color: #2c2c2c
 		&:before
@@ -1683,6 +1694,8 @@ path
 	font-weight: 700
 	text-transform: uppercase
 	margin-bottom: 19px
+	&_pr
+		padding-right: 40px
 	&_green
 		color: #669d46
 
@@ -1818,11 +1831,27 @@ path
 		margin-bottom: 30px
 	&__parmetry
 		&-title
+			position: relative
 			font-size: 16px
 			line-height: 20px
 			font-weight: 700
 			padding-bottom: 17px
 			border-bottom: 1px solid #c4c4c4
+			&:after
+				content: ''
+				display: none
+				vertical-align: middle
+				margin-left: 12px
+				transition: .3s
+				@include sprite($caret-black)
+			.icon
+				margin-right: 13px
+				width: 20px
+				display: none
+			&_click
+				&:after
+					transform: rotate(180deg)
+
 	&__btns
 		font-size: 0
 		padding-top: 19px
@@ -2075,7 +2104,6 @@ path
 
 
 .brands-page
-	padding-bottom: 60px
 	&__item
 		display: block
 		height: 255px
@@ -2532,6 +2560,7 @@ path
 		line-height: 480px
 		border: 1px solid #dbdbdb
 		padding: 10px
+		text-align: center
 		img
 			display: inline-block
 			vertical-align: middle
@@ -2831,12 +2860,12 @@ path
 			height: 60px
 			.reviews-col
 				&__more
-					display: block
+					display: inline
 		&_show
 			height: auto
 	&__more
-		display: none
-		position: absolute
+		z-index: 1
+		display: inline-block
 		background: white
 		right: 0
 		bottom: 4px
@@ -3118,6 +3147,7 @@ path
 		line-height: 20px
 		border: 1px solid #dbdbdb
 		padding: 25px 30px 29px
+		min-height: 151px
 		p
 			margin-bottom: 15px
 			&:last-of-type
@@ -3481,9 +3511,9 @@ path
 		vertical-align: middle
 		
 	&__text
-		width: 800px
+		width: calc(100% - 70px)
+		padding-left: 25px
 		font-size: 15px
-		margin-left: 25px
 
 		
 
@@ -3792,6 +3822,69 @@ path
 .lk-nav
 	padding-top: 8px
 	font-size: 0
+
+				
+	&_mobile
+		position: absolute
+		top: 95px
+		left: 0
+		z-index: 2
+		padding-top: 0
+		transform: translateX(-240px)
+		transition: .3s
+		display: none
+		.lk-nav
+			position: relative
+			&__wrap
+				width: 240px
+				background: #f2f2f2
+				padding-bottom: 20px
+			&__item
+				padding-top: 13px
+				padding-bottom: 13px
+				padding-left: 40px
+				border-bottom: 1px solid #e3e3e3
+				margin-bottom: 0
+			&__list
+				margin-bottom: 20px
+				
+			&__sublist
+				padding-bottom: 0
+			&__exit
+				margin-left: 40px
+			&__btn
+				width: 40px
+				height: 40px
+				background: #353535
+				position: absolute
+				right: -40px
+				top: 0
+				
+			&__btn
+				line-height: 38px
+				text-align: center
+				cursor: pointer
+				.icon
+					path, polygon
+						fill: #fff !important
+				.icon-persona
+					width: 20px
+				.icon-close
+					width: 14px
+					display: none
+				&_click
+					.icon-close
+						display: block
+				
+	&_open
+		transform: translateX(0px)
+		.lk-nav
+			&__btn
+				.icon-persona
+					display: none
+				.icon-close
+					display: inline-block
+				
 	.icon
 		width: 16px
 	&__list
@@ -3845,6 +3938,74 @@ path
 			top: -1.5px
 			margin-right: 12px
 		
+
+
+.page-nav
+	position: absolute
+	top: 40px
+	right: 0
+	transition: .3s
+	transform: translateX(240px)
+	&_open
+		transform: translateX(0)
+		.page-nav
+			&__btn
+				span
+					&:nth-of-type(1)
+						top: 5px
+						transform: rotate(45deg)
+					&:nth-of-type(2)
+						opacity: 0
+					&:nth-of-type(3)
+						top: -5px
+						transform: rotate(-45deg)
+				
+	&__wrap
+		width: 240px
+		background: #f2f2f2
+		padding: 15px 40px 30px 29px
+	&__btn
+		background: #ffc300
+		width: 40px
+		height: 40px
+		padding-top: 14px
+		position: absolute
+		top: 0
+		left: -40px
+		cursor: pointer
+		span
+			position: relative
+			display: block
+			background: #423e32
+			width: 14px
+			height: 2px
+			margin-bottom: 3px
+			margin-left: auto
+			margin-right: auto
+			transition: .3s
+			&:last-of-type
+				margin-bottom: 0
+	&__title
+		font-size: 16px
+		font-weight: 700
+		text-transform: uppercase
+		border-bottom: 1px solid #d2d2d2
+		padding-bottom: 15px
+		margin-bottom: 18px
+	&__list
+
+		li
+			display: block
+			margin-bottom: 10px
+			&:last-of-type
+				margin-bottom: 0
+		
+		
+
+		
+		
+
+
 
 .lk
 	&__item
@@ -4248,6 +4409,8 @@ path
 	&__weight
 		text-align: right
 		font-size: 13px
+		p
+			display: inline
 
 	&__item
 		padding: 20px 0
@@ -4459,33 +4622,7 @@ path
 		font-size: 22px
 		font-weight: 700
 		margin-bottom: 17px
-	&__table
-		table
-			border-collapse: collapse
-			width: 100%
-			thead
-				td, th
-					font-size: 13px
-					padding-top: 11px
-					padding-bottom: 10px
-					background-color: #f2f2f2
-					&:nth-of-type(even)
-						background-color: #eaeaea
-			tbody
-				tr
-					&:nth-of-type(odd)
-						td
-							background: #f9f9f9
-				td
-					padding-top: 15px
-					padding-bottom: 22px
-					font-size: 15px
-					&:nth-of-type(4)
-						font-style: italic
-			td, th
-				padding-left: 20px
-				&:nth-of-type(1)
-					padding-left: 31px
+	
 	&__status
 		font-weight: 500
 		&_plus
@@ -4493,8 +4630,49 @@ path
 		&_minus
 			color: #f63838
 		
+	&__comment
+		font-style: italic
 
 
+					
+
+	&__date
+		width: 22%
+	
+	&__status, &__sum
+		width: 19%
+
+	&__comment
+		width: (100% - 22% - (19% * 2))
+		
+	
+
+	&__date, &__status, &__sum, &__comment
+		display: inline-block
+		vertical-align: middle
+		font-size: 15px
+		padding: 15px 5px 22px 15px
+		
+	&__date
+		padding-left: 30px
+	
+	&__item
+		font-size: 0
+		width: 100%
+		&:nth-of-type(odd)
+			background: #f9f9f9
+		&_head
+			*
+				font-style: normal
+				font-size: 13px
+				padding-top: 11px
+				padding-bottom: 10px
+				font-weight: 400
+			.bonuses
+				&__date, &__sum
+					background: #f2f2f2
+				&__status, &__comment
+					background: #eaeaea
 
 .alerts
 	&__title
@@ -4883,7 +5061,7 @@ path
 			display: block
 			content: ''
 			width: 9px
-			height: 8px
+			height: 9px
 			top: 4.5px
 			left: 5px
 			box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.26)
@@ -4896,6 +5074,7 @@ path
 			cursor: default
 			&:before
 				background-color: #e8e8e8
+		
 
 
 
@@ -4915,10 +5094,13 @@ path
 			margin-bottom: 13px
 			&:last-of-type
 				margin-bottom: 0
+	.checkbox
+		label
+			padding-left: 29px
 	&__input
 		position: absolute
 		bottom: -5px
-		left: 198px
+		left: 207px
 		input
 			font-size: 14px
 			font-family: $font-family-1
@@ -5065,11 +5247,41 @@ path
 				border-color: #63b335
 			&:after
 				@include sprite($check-big-green)
+		p
+			display: none
 		
 		
 .cart-list
 	padding-right: 40px
+	&__list
+		&_small
+			padding-right: 35px
+			.cart-list
+				&__remove
+					display: none
+				&__img
+					padding-left: 0
+
+				&__inrement
+					width: auto
+					padding-bottom: 0
+					padding-top: 10px
+				&__data
+					width: 50%
+				&__price
+					width: 25%
+					
+					
+					
+					
+		.cart-list
+			&__price
+				padding-right: 0
+				
+	
+		
 	&__item
+		position: relative
 		font-size: 0
 		border-top: 1px dotted #eaeaea 
 		// border-bottom: 1px dotted #eeeeee
@@ -5113,8 +5325,9 @@ path
 					
 					
 	&__remove
-		width: 4%
+		position: absolute
 		text-align: center
+		top: 50px
 		.icon
 			width: 16px
 			cursor: pointer
@@ -5122,16 +5335,17 @@ path
 				path
 					fill: #f25858 !important
 	&__img
-		width: 16%
+		width: 25%
 		text-align: center
 		line-height: 87px
+		padding-left: 20px
 		img
 			display: inline-block
 			vertical-align: middle
 			max-width: 108px
 			max-height: 87px
 	&__data
-		width: 46%
+		width: 41%
 
 	&__title
 		font-size: 14px
@@ -5195,15 +5409,15 @@ path
 
 		
 	&__data, &__inrement, &__price
-		padding-bottom: 30px
+		// padding-bottom: 30px
 
 		
 		
 		
 		
-	&__remove, &__img, &__data, &__inrement, &__price
+	&__img, &__data, &__inrement, &__price
 		display: inline-block
-		vertical-align: middle
+		vertical-align: top
 
 	&__more
 		padding-left: 34px
@@ -5321,6 +5535,9 @@ path
 		&-title
 			font-weight: 500
 			margin-bottom: 10px
+			a
+				&:hover
+					border-color: $color-1
 		&-vendor-code
 			margin-bottom: 6px
 			font-size: 10px
@@ -5525,6 +5742,7 @@ path
 		line-height: 20px
 		// max-width: 215px
 		padding-left: 40px
+		padding-right: 40px
 		&:before
 			position: absolute
 			display: block
@@ -5662,13 +5880,14 @@ path
 
 
 .final
-	margin-bottom: 25px
+	
 	&__text
 		font-size: 20px
 		line-height: 22px
 		&_small
 			font-size: 16px
 			margin-top: 7px
+			margin-bottom: 25px
 	&__links
 		border-bottom: 1px solid #dddddd
 		padding-bottom: 29px
@@ -5788,6 +6007,7 @@ path
 		color: #fff
 		text-align: center
 		padding: 0 30px 50px !important
+		border: none
 		.popup
 			&__close
 				.icon
@@ -5813,6 +6033,7 @@ path
 				font-style: italic
 	&_policy
 		padding: 0 30px 30px 30px
+		width: 590px
 		.popup
 			&__text
 				height: 400px
@@ -5820,7 +6041,9 @@ path
 				padding-right: 20px
 				line-height: 20px
 				
-			
+	.contacts-block__phone a
+		display: inline-block
+		padding-left: 0
 
 	.fancybox-close-small
 		display: none
@@ -6053,3 +6276,15 @@ path
 
 .hidden
 	display: none
+
+
+.popups
+	&__btn
+		width: 250px
+		margin-left: 0
+		margin-bottom: 10px
+		
+
+.main
+	position: relative
+	overflow: hidden

@@ -37,8 +37,97 @@
 		.slick-next
 			right: 24px
 
+	.cart-list
+		&__data
+			padding-left: 5px
+			padding-right: 10px
+
+	.price
+		&__input
+			width: 60px
+		&__counts
+			background-size: 80%
+	
+
+	.vacancies
+		&__name
+			width: 80%
+			
+		&__salary
+			width: 20%
+
+	.order
+		&__repeat
+			left: 40%
+
+	.w190
+		// width: 100%
+
+	.element
 
 
+	.personal-data
+		.element_calendar
+			margin-left: 30px
+
+	.product-page
+		&__img
+			width: 500px
+			height: 335px
+			line-height: 300px
+			img
+				max-height: 300px
+	.recipe-item
+		&__img
+			img
+				height: 100%
+
+	.reg
+		&__auth
+			&_page-reg
+				margin-left: -10px
+				padding-right: -10px
+				padding-left: 25px
+				padding-right: 15px
+				.reg
+			
+					&__list, &__auth
+						max-width: 750px
+
+					&__socials, &__login
+						display: block
+						width: 100%
+
+					&__socials
+						margin-bottom: 30px
+
+					&__login
+						padding-left: 30px
+		&__nav
+			&-btn
+				width: 90px
+				font-size: 17px
+			&-ur
+				width: calc(100% - 130px)
+				font-size: 17px
+				line-height: 19px
+				margin-left: 39px
+				&:before
+					top: 7px
+				span
+					// display: inline-block
+					
+	.search-result
+		&__input
+			width: 300px
+
+	.product-page__bonuses
+		padding-right: 23px
+
+
+						
+			
+			
 @media screen and (max-width: 1020px)
 	.case
 		position: relative
@@ -118,7 +207,7 @@
 					content: ''
 					display: none
 					background-image: url(../../img/sprite.png)
-					background-position: -154px -84px
+					background-position: -135px -92px
 					width: 8px
 					height: 5px
 					display: block
@@ -127,9 +216,9 @@
 					right: 25px
 				&_open
 					> a
-						#fcc203
+						color: #fcc203
 					&:before
-						background-position: -146px -84px
+						background-position: -127px -92px
 				&:hover
 					&:before
 						// background-position: -146px -84px
@@ -198,6 +287,7 @@
 			font-size: 0
 			padding-top: 20px
 			padding-bottom: 20px
+			cursor: pointer
 			&_click
 				span
 					&:nth-of-type(1)
@@ -261,7 +351,7 @@
 					content: ''
 					display: none
 					background-image: url(../../img/sprite.png)
-					background-position: -127px -92px
+					background-position: -143px -92px
 					width: 8px
 					height: 5px
 					display: block
@@ -541,6 +631,183 @@
 			padding-left: 40px
 			padding-right: 40px
 
+	.page
+		margin-bottom: 55px
+
+	.page404
+		&__icon
+			max-width: 290px
+			text-align: center
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 35px
+		&__content
+			padding-left: 0
+		&__text
+			font-size: 14px
+			line-height: 20px
+			font-weight: 500
+		&__input
+			margin-right: 4px
+			width: calc(100% - 114px)
+			
+		&__btn
+			font-size: 14px
+			padding-top: 13px
+			padding-bottom: 15px
+			width: 110px
+			position: relative
+			top: 1px
+
+	.contacts-block
+			&__btn
+				display: block
+				margin-bottom: 18px
+				margin-right: 0
+				&-email
+					width: 252px
+					margin-left: 0
+			&__phone
+				display: block
+				margin-bottom: 18px
+				margin-right: 0
+				a
+					margin-top: 2px
+					padding-left: 25px
+					display: block
+			&__whatsapp
+				display: block
+				margin-right: 0
+				
+	.cart-list
+		&__return-bottom
+			margin-top: 28px
+
+
+	.main-title
+		font-size: 22px
+		line-height: 26px
+
+	.steps
+		text-align: center
+		margin-bottom: 25px
+		&__item
+			margin-right: 43px
+			&:last-of-type
+				&:after
+					display: none
+			p
+				display: block
+				font-size: 12px
+				font-weight: 700
+				width: 30px
+				text-align: center
+				position: absolute
+				top: 0
+				line-height: 30px
+			span
+				display: none
+			&:before
+				width: 26px
+				height: 26px
+				margin-right: 0
+			&:after
+				background-image: url(../../img/sprite.png)
+				background-position: -139px -84px
+				width: 12px
+				height: 8px
+				top: 12px
+				left: 45px
+
+
+
+	.reg
+		&__subtitle
+			margin-bottom: 0
+			position: relative
+			padding: 12px 30px 13px 44px
+			font-size: 16px
+			font-weight: 700
+			cursor: pointer
+			&:before
+				position: absolute
+				display: block
+				content: ''
+				top: 11px
+				left: 14px
+				width: 17px
+				height: 17px
+				box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.18)
+				border: 1px solid #bcbcbc
+				background-color: #ffffff
+				border-radius: 50%
+				transition: .3s
+			&:after
+				position: absolute
+				display: block
+				content: ''
+				width: 9px
+				height: 8px
+				top: 17px
+				left: 19px
+				box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.26)
+				background-color: #414141
+				border-radius: 50%
+				transition: .3s
+				transform: scale(0)
+			&_selected
+				background: #ffc300
+				&:after
+					opacity: 1
+					transform: scale(1)
+		&__new
+			margin-top: 15px
+			
+		&__list
+			border-left: none
+			border-right: none
+			padding: 25px 24px
+			margin-left: -10px
+			margin-right: -10px
+		&__submit
+			&-desc
+				display: block
+				margin-left: 0
+				margin-top: 20px
+		&__auth
+			&_line
+				display: none
+				padding: 15px 0
+				margin-left: -10px
+				margin-right: -10px
+				border-left: none
+				border-right: none
+				margin-top: 15px
+				.reg
+					&__login
+						padding-bottom: 13px
+						margin-bottom: 15px
+					&__login, &__socials
+						padding-left: 15px
+						padding-right: 10px
+
+						
+						
+
+	.element
+		&_left.element_mob
+			margin-right: 0
+		&_right.element_mob
+			margin-left: 0
+		&_pt
+			padding-top: 0
+	
+
+
+	.cart-list
+		&__return-top
+			padding-top: 15px
+
 
 
 	.footer
@@ -560,10 +827,692 @@
 			a
 				display: inline
 			
+
+
+	.step-address
+		margin-right: 0
+		&__item
+			padding: 20px
+		&__body
+			.personal-data
+				padding-left: 0
+
+	.element
+		&__title
+			font-size: 14px
+		&_left
+			margin-right: 10px
+		&_right
+			margin-left: 10px
+		&_middle
+			margin-left: 5px
+			margin-right: 5px
 			
 
+	.cart-list
+		padding-right: 0
+		&__item
+			&:first-of-type
+				padding-top: 0
+				border-top: none
+			
+	.final
+		&__title
+			&_small
+				margin-bottom: 20px
+		&__links
+			padding-left: 24px
+		&__link
+			margin-bottom: 9px
+			&:last-of-type
+				margin-bottom: 0
+			
+
+	.order
+		&__head
+			padding: 22px 25px 23px
+		&__title
+			margin-bottom: 10px
+		&__delivery
+			margin-bottom: 32px
+		&__delivery, &__price
+			width: 100%
+		&__body
+			padding: 20px 20px 25px 20px
+		&__foot
+			position: relative
+			&-title
+				position: relative
+				padding: 20px 20px 45px 20px
+		&__quantity, &__weight
+			width: 100% !important
+			display: block
+		&__weight
+			text-align: left !important
+			margin-top: 12px
+			line-height: 17px
+			p
+				display: block
+		&__toggle
+			position: absolute
+			bottom: 15px
+			left: 20px
+			text-align: left
+			width: auto !important
+		&__item
+			&_delivery
+				.order
+					&__item
+						&-img
+							width: 12%
+						&-count, &-price
+							display: none
+						&-data
+							width: 56%
+						&-total-price
+							width: 30%
+					&__data
+						font-size: 16px
+						
+						
+			&-img
+				width: 35%
+				padding-left: 5px
+				padding-right: 5px
+				img
+					max-width: 100%
+			&-data
+				width: 65%
+				padding-left: 10px
+				padding-right: 10px
+			&-count
+				width: 20%
+			&-price
+				width: 40%
+			&-total-price
+				width: 40%
+			&-count, &-price, &-total-price
+				display: inline-block
+				vertical-align: middle
+		&__status
+			position: static
+			margin-top: 14px
+		&__btns
+			right: 17px
+			top: 17px
+			&-item
+				display: block
+				margin: 0 0 6px
+			
+			
+			
+	.catalog__
+			&banner
+				padding-top: 35px
+				margin-left: -10px
+				margin-right: -10px
+				&-btn
+					display: none
+				&-title
+					padding-top: 0
+					padding-left: 15px
+					font-size: 22px
+					line-height: 36px
+					span
+						font-size: 34px
+				&-desc
+					display: block
+					padding-left: 14px
+					width: 100%
+					padding-right: 10px
+			
+	.category
+		&__parmetry
+			margin-bottom: 19px
+			&-title
+				cursor: pointer
+				&:after, .icon
+					display: inline-block
+					display: inline-block
+			&-wrap
+				display: none
+				&_error
+					width: 100% !important
+					.category__btns
+						width: 210px
+						margin-left: auto
+						margin-right: auto
+		&__aside
+			padding-right: 0
+			
+			
+		&__list
+			margin-left: -5px
+			margin-right: -5px
+			.row
+				display: inline
+				margin-left: 0
+				margin-right: 0
+				font-size: 0
+				&:before, &:after
+					display: none
+			.col
+				display: inline-block
+				vertical-align: top
+				float: none
+
+			
+			
+		&__sort
+			&-item
+				display: block !important
+				margin-bottom: 10px !important
+				margin-right: 0 !important
+				&:last-of-type
+					margin-bottom: 0
+			
+
+		&__parmetry
+			&-wrap
+				width: 210px
+				margin-left: auto
+				margin-right: auto
+
+	.parameter
+		&__body
+			// .nano
+			// 	height: auto
+			// .nano-content
+			// 	position: relative
 
 
+	.contacts
+		padding-right: 0
+		&__line
+			&_bold
+			
+		&__block
+			margin-bottom: 25px
+
+	.addresses
+		&__item
+			min-height: 1px
+			
+	.error
+		margin-bottom: 30px
+		&__content
+			width: 100%
+			margin-left: 0
+		&__status
+			p
+				width: calc(100% - 30px)
+
+	.faq
+		&__head
+			padding: 22px 22px 35px
+			margin-bottom: 30px
+			&-btn
+				margin-bottom: 25px
+			&-text
+				margin-left: 0
+		&__policy
+			display: block
+			margin-left: 0
+			margin-top: 19px
+			width: auto
+
+		&__right
+			padding-right: 0
+			margin-top: 12px
+
+
+		&__title
+			font-size: 18px
+			font-weight: 500
+		&__subtitle
+			line-height: 22px
+			span
+				padding-bottom: 3px
+			
+		&__item
+			padding: 22px 19px 28px
+			
+			
+	.vacancies
+		margin-bottom: 20px
+		padding-top: 28px
+		&__item
+			padding: 17px 18px 8px
+			
+		&__name
+			width: calc(100% - 120px)
+			
+		&__salary
+			width: 120px
+			
+		&__title
+			font-size: 20px
+			
+			
+	.textpage
+		padding-right: 0
+
+	.news
+		&__list
+			border-bottom: none
+			margin-bottom: 0
+		&__img
+			margin-right: 0
+			margin-bottom: 15px
+		&__content
+			width: 100%
+			display: block
+		&__title
+			height: auto
+			margin-bottom: 10px
+			
+	.order
+		&__repeat
+			position: static
+			margin-left: 0
+			margin-top: 12px
+
+	.address
+		&__item
+			padding-left: 40px
+		&__title
+
+		&__content
+			&:before
+				left: -25px
+			
+		&__control
+			position: static
+			margin-top: 20px
+			.order__btns-item
+				display: inline-block
+				vertical-align: middle
+				margin-right: 10px
+				&:last-of-type
+					margin-right: 0
+			
+	.personal-data
+		&__desc
+			display: block
+			margin-left: 0
+
+		&__btn
+			margin-top: 5px
+
+	.balance
+		&__count
+			display: block
+			margin-left: 30px
+			margin-top: 5px
+		&__text
+			margin-right: 0
+			
+	.bonuses
+		&__text
+			
+		&__count
+			display: block
+			margin-left: 30px
+		&__list
+			padding-top: 5px
+			border-top: 1px solid #e8e8e8
+			margin-left: -10px
+			margin-right: -10px
+			
+		&__item
+			padding: 20px 35px
+			&_head
+				display: none
+
+		&__date, &__status, &__sum, &__comment
+			width: auto
+			display: block
+			padding: 0
+			
+		&__sum
+			position: relative
+			top: -17px
+			left: 130px
+			width: 100px
+
+	.w190, .w270, .w350
+		width: 100%
+
+	.element
+		&__desc
+			display: none
+
+	.personal-data .element_calendar
+		margin-left: 0
+			
+	.messages
+		margin-left: -10px
+		margin-right: -10px
+		&__title, &__list
+			padding-left: 10px
+			padding-right: 10px
+			
+		&__icon
+			left: 18px
+			
+		&__item
+			position: relative
+			padding-bottom: 0
+			padding-left: 55px
+			padding-right: 15px
+
+		&__btn
+			// position: absolute
+			top: auto
+			bottom: 0
+			margin-bottom: 0
+			
+			
+		&__data
+			position: static
+			margin-top: 12px
+			padding-bottom: 20px
+
+		&__text
+			font-size: 14px
+
+	.lk
+		&__item
+			height: auto
+			background-image: none
+			padding: 25px 15px 30px 30px
+			
+	.product-page
+		&__slider
+			padding-bottom: 14px
+			
+		&__imgs
+			width: 15%
+			margin-right: 0
+			padding-right: 5px
+			
+		&__img
+			width: 85%
+
+		&__img, &__imgs
+			img
+				max-width: 100%
+
+		&__bonuses
+			padding-right: 0
+			.icon-info-yellow
+				display: none
+		
+		&__content
+			padding-right: 0
+			display: none
+			padding-right: 0
+			&.hidden
+				display: block
+				margin-top: 40px
+			&-title, &-links
+				display: block
+			&-title
+				margin-bottom: 8px
+		&__return
+			width: 160px
+			
+		&__bonuses
+			width: calc(100% - 160px)
+			.info
+				display: none
+			div
+				width: 80px
+				font-size: 11px
+				text-align: left
+
+		&__info
+			
+			
+		&__price
+			&-benefit
+				display: none
+
+		&__btn
+			width: 240px
+
+		&__stock
+			width: 62%
+
+		&__number
+			width: 38%
+			
+			
+			
+	.data
+		&__name, &__value
+			font-size: 12px
+			
+		&__name
+			width: 60%
+
+		&__value
+			width: 40%
+
+	
+	.reviews-col
+		&__more
+			display: none !important
+		&__text
+			height: auto
+
+		&__head
+			.icon-star
+				width: 20px
+		&__icon
+			margin-left: 0
+			width: 97px
+		&__voices
+			display: none
+			
+		&__count
+			font-size: 23px
+		
+		&__btn-more
+			margin-right: 10px
+
+	.feedback
+		padding-right: 0
+		pb
+		&__input
+			&-desc
+				display: none
+		&__checkbox
+			// width: 140px
+		&__foot
+			padding-bottom: 60px
+			
+		&__btn
+			position: absolute
+			bottom: 0
+			left: 5px
+
+			
+	.recipe-col
+		margin-top: 54px
+		&__head
+			position: relative
+			
+		&__icon
+			margin-left: 8px
+			margin-right: 17px
+			width: 56px
+		&__title
+			font-size: 14px
+			padding-bottom: 12px
+			span
+				display: inline
+		&__voices
+			position: absolute
+			bottom: 8px
+			left: 86px
+			width: 100px
+			text-align: left
+			
+			
+	.recipe-item
+		&_line
+			.recipe-item
+				&__img
+					display: block
+				&__content
+					width: 100%
+					display: block
+					padding-left: 0
+					padding-top: 12px
+					padding-right: 20px
+					height: auto
+					padding-bottom: 15px
+
+				&__counts
+					right: 20px
+					bottom: 15px
+
+	.recipe-item
+		&__img
+			max-height: 110px
+			img
+				height: 100%
+					
+		&__content
+			padding-left: 18px
+			padding-right: 18px
+			
+			
+	.c-ral
+		text-align: left
+
+			
+			
+	.category
+		&__sort-title
+			// margin-right: 0
+			// font-size: 12px
+			margin-right: 10px
+		&__sort-select
+			
+			
+			
+	.category__sort-item_wide 
+		
+		
+		.ui-selectmenu-button
+			width: 195px
+			padding-left: 5px
+			padding-right: 0
+		.ui-selectmenu-text
+			text-overflow: inherit
+
+	
+	.receptes-item
+		&__right
+			padding-left: 0
+			margin-top: 25px
+		&__add
+			display: block
+			margin-left: auto
+			margin-right: auto 
+		&__in-stock
+			width: 100%
+			
+		&__content
+			display: none
+			&.hidden
+				display: block
+				border-top: 1px solid #cecece
+				padding-top: 30px
+				margin-top: 30px
+
+		&__share-btns
+			margin-bottom: 0
+
+	.cooking
+		&__count
+			width: 38px
+			height: 38px
+			line-height: 32px
+			font-size: 17px
+		&__text
+			width: calc(100% - 38px)
+			
+			
+	.share__btn-print, .share__btn-mail
+		display: none
+
+	.share__title
+		display: block
+		margin-bottom: 10px
+			
+	.share__count
+		margin-right: 0
+
+	.more
+		&__head
+			font-size: 18px
+			
+	.category__sort-item_search
+		float: none
+		text-align: left
+
+	.search-result
+		padding: 20px 20px 25px
+		&__text
+			display: block
+			text-align: left
+			margin-bottom: 10px
+		&__input
+			margin-right: -2px
+			width: calc(100% - 110px)
+	.search-error
+		p
+			width: calc(100% - 30px)
+			
+	
+	.welcome
+		&__text, &__desc
+			padding-left: 10px
+			padding-right: 10px
+		
+		&__btn
+			margin-right: 0
+			width: 270px
+			
+		&__return
+			display: none
+			
+	.lk-nav
+		&_mobile
+			display: block
+	
+	.balance
+		margin-left: 40px
+	
+	.alerts
+		&__title
+			&_ml
+				padding-left: 40px
+	.info-block
+		&_ml
+			margin-left: 40px
+	.personal-data__title_mt
+		margin-left: 35px
+
+	.messages__title_ml
+		margin-left: 40px
+
+	.popup_feedback .popup__policy
+		margin-top: 20px
+			
 @media screen and (max-width: 767px)
 	.case
 		width: 100%
@@ -578,7 +1527,289 @@
 			padding-right: 0
 		&__title
 			font-size: 24px
+
+	.cart-list
+		padding-bottom: 50px
+		&__img
+			// text-align: right
+			// padding-right: 15px
 			
+		&__item
+			position: relative
+			padding-top: 15px
+			padding-bottom: 15px
+			&_small
+				.cart-list
+					&__price
+						margin-left: 50%
+						
+			.cart-list
+				&__data
+					padding-bottom: 10px
+					padding-right: 0
+					padding-left: 0
+				&__data, &__img
+					padding-bottom: 20px
+				&__img
+					padding-left: 0
+					img
+
+					
+				&__img, &__data, &__price
+					width: 50%
+				&__price
+					position: relative
+					// margin-left: 50%
+					text-align: left
+					padding-bottom: 0
+					padding-right: 0
+					vertical-align: top
+					&-wrap_bg
+						background: none
+						span
+							color: #d51515
+					.inrement
+						position: absolute
+						bottom: 20px
+						left: -100px
+		&__more
+			position: relative
+			text-align: center
+			padding-top: 15px
+			padding-bottom: 15px
+			&-number
+				display: block
+				text-align: center
+			&-btn
+				position: absolute
+				bottom: -30px
+				left: 50%
+				margin-left: -90px !important
+		&__data
+		&__inrement
+			width: 50% !important
+			padding-bottom: 0
+			&.hidden
+				display: inline-block
+		&__remove
+			position: absolute
+			top: 52px
+			width: auto
+			left: 0
+		&__price
+			.cart-list__inrement
+				display: none
+		&__more
+			&_small
+				margin-bottom: 40px
+			
+@media screen and (max-width: 720px)
+	.step-address
+		&__item
+			min-height: 1px
+			margin-left: -10px
+			margin-right: -10px
+			border-left: none
+			border-right: none
+		&__head
+			font-size: 20px
+		&__return-top
+			margin-left: 15px
+			margin-right: 15px
+			
+			
+	.wishes
+		margin-left: 15px
+		margin-right: 15px
+		&__input
+			position: relative
+			left: 0
+			bottom: 0
+			top: -3px
+			margin-left: 30px
+
+	.cart-totals, .cart-totals__btn
+		margin-left: 15px
+		margin-right: 15px
+
+	.cart-totals__btn
+		width: auto
+
+	.cart-totals
+		padding-top: 25px
+		&__btn-toggle
+			position: relative
+			top: -15px
+			width: 190px
+			padding: 5px 0 7px
+			span
+				font-size: 13px
+				display: inline-block
+				vertical-align: middle
+				padding-bottom: 1px
+				-webkit-transition: .3s
+				transition: .3s
+				border-bottom: 1px dotted #242424
+				&:hover
+					border-color: transparent
+			.icon
+				margin-left: 9px
+				transition: .3s
+			&_click
+				.cart-totals
+					&__slideUp
+						display: inline-block !important
+					&__slideDown
+						display: none
+				.icon
+					transform: rotate(180deg)
+			.cart-totals
+				&__slideUp
+					display: none
+					
+		&__data
+			&-name
+				width: 60%
+			&-count
+				width: 40%
+			
+		&__list
+			display: none
+			margin-bottom: 10px
+			padding-left: 15px
+			.nano
+				height: auto
+			.nano > .nano-content
+				position: relative
+				padding-right: 15px
+			.nano-pane
+				display: none
+		&__all
+			padding-top: 5px
+		&__btn-toggle
+		&__foot
+			.btn
+				margin-left: 0
+				margin-right: 0
+
+
+			
+			
+
+	.promocode
+		&__wrap
+			margin-left: 15px
+			margin-right: 15px
+			padding: 23px 29px 35px
+		&__desc
+			margin-left: 10px
+			margin-right: 15px
+	.cart-list
+		&__return-top_hidden
+			margin-left: 20px
+			
+
+@media screen and (max-width: 690px)
+	.recipe-item
+		max-width: 290px
+		margin-left: auto
+		margin-right: auto
+		&__content
+			height: auto
+			padding-bottom: 15px
+		&__counts
+			right: 15px
+			bottom: 15px
+			
+	.receptes-item__img
+		margin-left: -10px
+		margin-right: -10px
+
+@media screen and (max-width: 620px)
+	.popup
+		width: 100%
+		&__link
+			margin-left: 15px !important
+	.popup_auth .popup__body, .popup_auth .popup__foot, .popup_recepe .popup__body
+		padding-left: 35px
+		padding-right: 35px
+	.contacts
+		&__line
+			&_bold
+				padding-bottom: 0
+			
+	.schedule
+		margin-left: -4px
+		margin-right: -4px
+		&__item
+			width: 25%
+			margin-bottom: 24px
+
+	.product-page
+		&__imgs
+			width: 25%
+			&-item
+				height: 64.5px
+				line-height: 58px
+				overflow: hidden
+				padding: 3px
+		&__img
+			line-height: 170px
+			height: 200px
+			width: 75%
+			img
+				max-height: 170px
+
+
+			
+			
+
+
+
+
+
+
+
+@media screen and (max-width: 500px)
+	
+			
+	.method-pay
+		margin-left: -10px
+		margin-right: -10px
+		border-left: none
+		border-right: none
+		padding: 25px 10px
+	
+	.method-pay
+		&__title
+			padding-left: 30px
+			
+
+	.order-list
+		padding-left: 0
+
+	.hidden-550
+		display: none
+
+	.text
+		table
+			td, th
+				padding: 5px
+
+@media screen and (max-width: 450px)
+	.vacancies
+		&__name, &__salary
+			width: 100%
+		&__name
+			font-size: 15px
+			margin-bottom: 3px
+			line-height: 20px
+			
+		&__salary
+			text-align: left
+			font-size: 13px
+			
+
 
 @media screen and (max-width: 370px)
 	.reviews

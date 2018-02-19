@@ -4,15 +4,21 @@
   width: 4px;
   height: 6px; }
 
+.icon-arrow-step {
+  background-image: url(../../img/sprite.png);
+  background-position: -139px -84px;
+  width: 12px;
+  height: 8px; }
+
 .icon-calendar-arrow-left {
   background-image: url(../../img/sprite.png);
-  background-position: -115px -92px;
+  background-position: -121px -92px;
   width: 6px;
   height: 10px; }
 
 .icon-calendar-arrow-right {
   background-image: url(../../img/sprite.png);
-  background-position: -121px -92px;
+  background-position: -115px -92px;
   width: 6px;
   height: 10px; }
 
@@ -24,55 +30,55 @@
 
 .icon-caret-black {
   background-image: url(../../img/sprite.png);
-  background-position: -127px -92px;
+  background-position: -143px -92px;
   width: 8px;
   height: 5px; }
 
 .icon-caret-white {
   background-image: url(../../img/sprite.png);
-  background-position: -154px -84px;
+  background-position: -135px -92px;
   width: 8px;
   height: 5px; }
 
 .icon-caret-yellow {
   background-image: url(../../img/sprite.png);
-  background-position: -146px -84px;
+  background-position: -127px -92px;
   width: 8px;
   height: 5px; }
 
 .icon-check-big-black {
   background-image: url(../../img/sprite.png);
-  background-position: -143px -74px;
+  background-position: -115px -74px;
   width: 14px;
   height: 10px; }
 
 .icon-check-big-gray {
   background-image: url(../../img/sprite.png);
-  background-position: -115px -74px;
+  background-position: -129px -74px;
   width: 14px;
   height: 10px; }
 
 .icon-check-big-green {
   background-image: url(../../img/sprite.png);
-  background-position: -129px -74px;
+  background-position: -143px -74px;
   width: 14px;
   height: 10px; }
 
 .icon-check-black {
   background-image: url(../../img/sprite.png);
-  background-position: -115px -84px;
+  background-position: -127px -84px;
   width: 12px;
   height: 8px; }
 
 .icon-check-white {
   background-image: url(../../img/sprite.png);
-  background-position: -127px -84px;
+  background-position: -115px -84px;
   width: 12px;
   height: 8px; }
 
 .icon-check {
   background-image: url(../../img/sprite.png);
-  background-position: -139px -84px;
+  background-position: -151px -84px;
   width: 7px;
   height: 6px; }
 
