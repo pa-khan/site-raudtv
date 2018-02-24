@@ -6193,6 +6193,8 @@ path {
       padding-bottom: 30px;
       border-bottom: 1px solid #ffc300;
       margin-bottom: 25px; }
+    .popup_feedback .contacts-block__phone a, .popup_feedback .contacts-block__whatsapp a {
+      font-size: 16px; }
   .popup_thanks {
     width: 590px;
     background-color: #4ab10f;

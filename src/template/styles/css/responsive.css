@@ -428,7 +428,7 @@
   .card_sms .combined__input {
     margin-bottom: 14px; }
   .cards {
-    display: none; }
+    margin-bottom: 0; }
   .card__step {
     position: relative;
     width: 280px; }
@@ -439,6 +439,9 @@
     position: absolute;
     top: 28px;
     left: 170px; }
+  .card__desc-false {
+    padding-left: 0;
+    padding-top: 0; }
   .card__step-ok {
     position: relative; }
     .card__step-ok svg {
@@ -1169,7 +1172,10 @@
   .messages__title_ml {
     margin-left: 40px; }
   .popup_feedback .popup__policy {
-    margin-top: 20px; } }
+    margin-top: 20px;
+    display: block; }
+  .popup_feedback .contacts-block__phone a {
+    margin-top: 0 !important; } }
 
 @media screen and (max-width: 767px) {
   .case {

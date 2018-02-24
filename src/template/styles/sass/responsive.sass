@@ -539,7 +539,9 @@
 				margin-bottom: 14px
 	
 	.cards
-		display: none
+		// display: none
+		margin-bottom: 0
+		
 
 	.card
 		&__step
@@ -554,6 +556,9 @@
 			position: absolute
 			top: 28px
 			left: 170px
+		&__desc-false
+			padding-left: 0
+			padding-top: 0
 	.card__step-ok
 		position: relative
 		svg
@@ -566,7 +571,7 @@
 			width: calc(100% - 30px)
 			span
 				// display: block
-
+		
 	.recipe
 		&__data
 			padding-left: 0
@@ -1510,9 +1515,13 @@
 	.messages__title_ml
 		margin-left: 40px
 
-	.popup_feedback .popup__policy
-		margin-top: 20px
-			
+	.popup_feedback
+		.popup__policy
+			margin-top: 20px
+			display: block
+		.contacts-block__phone
+			a
+				margin-top: 0 !important
 @media screen and (max-width: 767px)
 	.case
 		width: 100%
