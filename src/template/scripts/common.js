@@ -542,21 +542,35 @@ $(document).ready(function($) {
 	$('.inrement__btn_plus').click(function() {
 		var input = $(this).siblings('.inrement__input').find('input'),
 				parent = $(this).parents('.inrement'),
+				friend = $(this).siblings('.inrement__btn'),
 				inputVal = input.val();
 		if (!parent.hasClass('inrement_disabled')) {
 			if (inputVal < 99) {
 				input.val(Number(inputVal) + 1)
+				$(this).addClass('inrement__btn_green');
+			}
+			if (inputVal == 98) {
+				$(this).removeClass('inrement__btn_green');
 			}
 		}
 		
 	});
+
+	$('.inrement__btn_plus').addClass('inrement__btn_green');
+
 	$('.inrement__btn_minus').click(function() {
 		var input = $(this).siblings('.inrement__input').find('input'),
 				parent = $(this).parents('.inrement'),
+				friend = $(this).siblings('.inrement__btn');
 				inputVal = input.val();
 		if (!parent.hasClass('inrement_disabled')) {
 			if (inputVal > 1) {
-				input.val(Number(inputVal) - 1);	
+				input.val(Number(inputVal) - 1);
+				$(this).addClass('inrement__btn_green');
+				friend.addClass('inrement__btn_green');
+			}
+			if (inputVal == 2) {
+				$(this).removeClass('inrement__btn_green');
 			}
 		}
 	});

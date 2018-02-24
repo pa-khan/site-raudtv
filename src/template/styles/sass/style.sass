@@ -696,7 +696,7 @@ path
 			color: #ffb300
 		.product
 			border: none
-			box-shadow: none
+			box-shadow: none !important
 			text-align: left
 			padding: 0
 			&__img
@@ -1168,6 +1168,16 @@ path
 .inrement
 	font-size: 0
 	margin-left: auto
+	&_green
+		.inrement
+			&__btn
+				&_green
+					border-color: #48b00e
+					background-color: #48b00e
+					svg
+						rect, polygon
+							fill: #fff !important
+				
 	&_disabled
 		.inrement
 			&__btn
@@ -1478,10 +1488,15 @@ path
 
 	&__link
 		font-weight: 500
+		// text-align: center
+		line-height: 30px
 		a
 			margin-right: 10px
 			&:hover
 				border-color: $color-1
+		svg
+			display: inline-block
+			vertical-align: middle
 
 
 	&__text
@@ -1496,6 +1511,7 @@ path
 
 	.slick-arrow
 		background-color: #fff
+		text-align: center
 		&:hover
 			border-color: #e93b37
 		svg
@@ -3214,11 +3230,14 @@ path
 	border-radius: 0
 	&-item
 		display: block
-		font-size: 12px
+		font-size: 14px
 		background: none
 		list-style-image: none
-		&:hover
-			background: #ffc300
+		
+		.ui-menu-item-wrapper
+			padding: 4px 20px
+			&:hover
+				background: #ffc300
 		.ui-state-active
 			background: #ffc300
 			border: none
@@ -5060,10 +5079,10 @@ path
 			position: absolute
 			display: block
 			content: ''
-			width: 9px
-			height: 9px
-			top: 4.5px
-			left: 5px
+			width: 7px
+			height: 7px
+			top: 5px
+			left: 6px
 			box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.26)
 			background-color: #414141
 			border-radius: 50%
@@ -5270,6 +5289,9 @@ path
 					width: 50%
 				&__price
 					width: 25%
+				&__bonus
+					display: none
+					
 					
 					
 					
@@ -5387,6 +5409,15 @@ path
 			margin-bottom: 7px
 			span
 				font-size: 18px
+			&_bg
+				background-color: #ffc400
+				padding-right: 6px
+				max-width: 100px
+				padding-top: 2px
+				padding-bottom: 4px
+				margin-left: auto
+				span
+					color: inherit
 		&-apiece
 			font-size: 13px
 			font-weight: 500
@@ -5760,10 +5791,10 @@ path
 			position: absolute
 			display: block
 			content: ''
-			width: 9px
-			height: 8px
+			width: 7px
+			height: 7px
 			top: 7.5px
-			left: 5px
+			left: 6px
 			box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.26)
 			background-color: #414141
 			border-radius: 50%
@@ -5976,7 +6007,7 @@ path
 				margin-bottom: 22px
 			&__desc
 				text-align: center
-				max-width: 305px
+				max-width: 310px
 				font-style: italic
 				line-height: 19px
 				margin-bottom: 27px
