@@ -3621,6 +3621,13 @@ path {
   position: relative;
   display: inline-block;
   vertical-align: middle; }
+  .info:before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    width: 30px;
+    height: 30px; }
   .info:hover .info__wrap {
     opacity: 1;
     z-index: 1; }

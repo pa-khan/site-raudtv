@@ -3310,6 +3310,13 @@ path
 	position: relative
 	display: inline-block
 	vertical-align: middle
+	&:before
+		content: ''
+		position: absolute
+		top: -7px
+		left: -7px
+		width: 30px
+		height: 30px
 	&:hover
 		.info
 			&__wrap
